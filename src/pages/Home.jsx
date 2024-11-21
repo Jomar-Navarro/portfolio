@@ -1,3 +1,3 @@
 export default function Home() {
-	return <h1>Welcome to my Portfolio!</h1>;
+	return <h1 className="text-center text-white">Welcome to my Portfolio!</h1>;
 }
