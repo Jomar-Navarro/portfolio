@@ -1,0 +1,23 @@
+.swiper {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	/* Center slide text vertically */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: translate(50%, 50%);
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img {
+		object-fit: cover;
+		width: 150px;
+		height: 150px;
+	}
+}

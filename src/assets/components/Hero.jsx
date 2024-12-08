@@ -1,3 +1,5 @@
+import Swiper from "./Swiper";
+
 import styles from "../style/Hero.module.scss";
 
 export default function Hero() {
@@ -18,6 +20,10 @@ export default function Hero() {
 					<div className={styles.image}>
 						<img src="src/assets/img/self.PNG" alt="myself" />
 					</div>
+				</div>
+
+				<div className="my-5">
+					<Swiper />
 				</div>
 			</div>
 		</>
