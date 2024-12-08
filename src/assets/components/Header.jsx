@@ -28,15 +28,6 @@ export default function Header() {
 				</div>
 
 				<div className="d-flex align-items-center gap-3">
-					{/* Bottone per Dark Mode */}
-					<div>
-						<input type="checkbox" className="checkbox" id="checkbox" />
-						<label htmlFor="checkbox" className="checkbox-label">
-							<i className="fas fa-moon"></i>
-							<i className="fas fa-sun"></i>
-							<span className="ball"></span>
-						</label>
-					</div>
 					<button className="btn btn-success rounded-4 p-3">Contact Me!</button>
 				</div>
 			</nav>

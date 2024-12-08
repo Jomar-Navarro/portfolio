@@ -10,9 +10,8 @@ export default function Hero() {
 
 						<p>
 							Sono Jomar Navarro, Full Stack Web Developer. Specializzato nella
-							creazione di applicazioni web moderne, intuitive e scalabili.
-							Esplora i miei progetti e scopri come posso dare vita alle tue
-							idee!
+							creazione di applicazioni web moderne e intuitive. Esplora i miei
+							progetti e scopri come posso dare vita alle tue idee!
 						</p>
 					</div>
 
