@@ -1,4 +1,5 @@
 import styles from "../assets/style/Project.module.scss";
+import Card from "../assets/components/Card";
 
 export default function Projects() {
 	return (
@@ -7,15 +8,19 @@ export default function Projects() {
 
 			<div className="justify-content-center">
 				<div className="right d-flex">
-					<div className={styles.card}>
-						<img src="src/assets/img/logo/html-logo.svg" alt="" />
-					</div>
+					<Card />
 				</div>
 
 				<div className="left d-flex flex-row-reverse">
-					<div className={styles.card}>
-						<img src="src/assets/img/logo/css-logo.svg" alt="" />
-					</div>
+					<Card />
+				</div>
+
+				<div className="right d-flex">
+					<Card />
+				</div>
+
+				<div className="left d-flex flex-row-reverse">
+					<Card />
 				</div>
 			</div>
 		</>
