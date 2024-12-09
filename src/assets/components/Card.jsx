@@ -4,7 +4,9 @@ export default function Card() {
 	return (
 		<>
 			<div className={styles.card}>
-				<img src="src/assets/img/logo/html-logo.svg" alt="" />
+				<a href="#">
+					<img src="src/assets/img/logo/html-logo.svg" alt="" />
+				</a>
 			</div>
 		</>
 	);
