@@ -21,6 +21,17 @@
 		width: 500px;
 		background-size: cover; /* Rende le sfumature proporzionate */
 	}
+	.decoThree {
+		position: absolute;
+		background: radial-gradient(circle, #450d40, transparent 60%);
+		opacity: 0.7;
+		z-index: -3;
+		top: 1;
+		transform: translate(60%, 50%);
+		height: 500px;
+		width: 500px;
+		background-size: cover; /* Rende le sfumature proporzionate */
+	}
 }
 
 .right {
