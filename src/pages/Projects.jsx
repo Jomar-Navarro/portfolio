@@ -17,7 +17,7 @@ export default function Projects() {
 					</div>
 				</div>
 
-				<div className="left d-flex flex-row-reverse">
+				<div className={styles.left}>
 					<Card />
 					<div className={styles.descriptions}>
 						<h2>Project name</h2>
@@ -33,7 +33,7 @@ export default function Projects() {
 					</div>
 				</div>
 
-				<div className="left d-flex flex-row-reverse">
+				<div className={styles.left}>
 					<Card />
 					<div className={styles.descriptions}>
 						<h2>Project name</h2>

@@ -14,3 +14,24 @@
 		}
 	}
 }
+
+.left {
+	position: relative;
+	display: flex;
+	flex-direction: row-reverse;
+	.descriptions {
+		position: absolute;
+		z-index: 3;
+		top: 0;
+		right: 1;
+		transform: translate(-140%, 100%);
+		color: #fff;
+		text-align: right;
+		h2 {
+			font-size: 3rem;
+		}
+		p {
+			font-size: 2rem;
+		}
+	}
+}
