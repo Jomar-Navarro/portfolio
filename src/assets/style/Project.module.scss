@@ -1,4 +1,16 @@
-.descriptions {
-	position: absolute;
-	transform: translate(50%, 50%);
+.right {
+	position: relative;
+	.descriptions {
+		position: absolute;
+		top: 0;
+		right: 1;
+		transform: translate(150%, 100%);
+		color: #fff;
+		h2 {
+			font-size: 3rem;
+		}
+		p {
+			font-size: 2rem;
+		}
+	}
 }

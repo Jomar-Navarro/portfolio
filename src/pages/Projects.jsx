@@ -9,7 +9,7 @@ export default function Projects() {
 			</h1>
 
 			<div className="justify-content-center">
-				<div className="right d-flex">
+				<div className={styles.right}>
 					<Card />
 					<div className={styles.descriptions}>
 						<h2>Project name</h2>
@@ -25,7 +25,7 @@ export default function Projects() {
 					</div>
 				</div>
 
-				<div className="right d-flex">
+				<div className={styles.right}>
 					<Card />
 					<div className={styles.descriptions}>
 						<h2>Project name</h2>
