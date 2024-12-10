@@ -1,3 +1,31 @@
+.wrapper {
+	position: relative;
+	.deco {
+		position: absolute;
+		background: radial-gradient(circle, #42044c, transparent 70%),
+			radial-gradient(circle, #000, transparent 50%);
+		top: 1;
+		z-index: -2;
+		transform: translate(70%, -40%);
+		height: 500px;
+		width: 500px;
+		background-size: cover; /* Rende le sfumature proporzionate */
+	}
+
+	.decoTwo {
+		position: absolute;
+		background: radial-gradient(circle, #a41fb9, transparent 60%),
+			radial-gradient(circle, #000, transparent 70%);
+		opacity: 0.4;
+		top: 1;
+		z-index: -1;
+		transform: translate(50%, 10%);
+		height: 500px;
+		width: 500px;
+		background-size: cover; /* Rende le sfumature proporzionate */
+	}
+}
+
 .right {
 	position: relative;
 	.descriptions {

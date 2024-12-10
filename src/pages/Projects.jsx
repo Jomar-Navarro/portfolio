@@ -8,7 +8,7 @@ export default function Projects() {
 				Welcome to my Projects!
 			</h1>
 
-			<div className="justify-content-center">
+			<div className={styles.wrapper}>
 				<div className={styles.right}>
 					<Card />
 					<div className={styles.descriptions}>
@@ -16,6 +16,9 @@ export default function Projects() {
 						<p>Date</p>
 					</div>
 				</div>
+
+				<div className={styles.deco}></div>
+				<div className={styles.decoTwo}></div>
 
 				<div className={styles.left}>
 					<Card />
