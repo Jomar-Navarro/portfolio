@@ -7,7 +7,7 @@ export default function Home() {
 	return (
 		<>
 			<main>
-				<section className={styles.section}>
+				<section className="hero">
 					<Hero />
 				</section>
 
