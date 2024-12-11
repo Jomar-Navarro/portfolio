@@ -4,7 +4,7 @@ import styles from "../style/Header.module.scss";
 
 export default function Header() {
 	return (
-		<div className="d-flex justify-content-center my-4">
+		<div className="container d-flex justify-content-center my-4">
 			<nav className="d-flex justify-content-between align-items-center w-100 px-4 py-3 rounded-4 border-2">
 				<h3 className="text-white">Jomar Navarro</h3>
 				<div>

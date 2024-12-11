@@ -1,6 +1,13 @@
 nav {
 	border: solid #060730;
-	background: rgb(1, 0, 15);
+	background: rgb(2, 1, 16);
+	background: linear-gradient(
+		148deg,
+		rgba(2, 1, 16, 1) 30%,
+		rgba(85, 10, 101, 1) 70%,
+		rgba(100, 12, 116, 1) 77%,
+		rgba(137, 16, 155, 1) 95%
+	);
 	background: linear-gradient(160deg, rgb(1, 0, 23) 40%, #89109b 100%);
 	background-repeat: no-repeat;
 	h3 {
