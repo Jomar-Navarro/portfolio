@@ -49,9 +49,9 @@ export default function Header() {
 					</div>
 
 					<div className="d-flex align-items-center gap-3">
-						<button className="btn btn-success rounded-4 p-3">
+						<a href="/about" className={styles.button}>
 							Contact Me!
-						</button>
+						</a>
 					</div>
 				</nav>
 			</div>

@@ -37,6 +37,9 @@ export default function Projects() {
 					</div>
 				</div>
 
+				<div className={styles.decoTwo}></div>
+				<div className={styles.deco}></div>
+
 				<div className={styles.left}>
 					<Card />
 					<div className={styles.descriptions}>
