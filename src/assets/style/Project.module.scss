@@ -71,3 +71,29 @@
 		}
 	}
 }
+
+.title {
+	text-align: center;
+	font-size: 30px;
+	font-weight: 900;
+	margin: 0px 0px 50 0px;
+	padding: 0px 0px 50px 00px;
+	color: #fff;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+
+	display: grid;
+	grid-template-columns: 1fr max-content 1fr;
+	grid-template-rows: 27px 0;
+	grid-gap: 40px;
+	align-items: center;
+}
+
+.title:after,
+.title:before {
+	content: " ";
+	display: block;
+	border-bottom: 1px solid rgba(85, 10, 101, 1);
+	border-top: 1px solid rgba(85, 10, 101, 1);
+	height: 10px;
+}

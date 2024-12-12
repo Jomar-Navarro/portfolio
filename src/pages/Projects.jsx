@@ -4,9 +4,7 @@ import Card from "../assets/components/Card";
 export default function Projects() {
 	return (
 		<>
-			<h1 className="text-center text-white mb-5 pb-5">
-				Welcome to my Projects!
-			</h1>
+			<h1 className={styles.title}>Welcome to my Projects!</h1>
 
 			<div className={styles.wrapper}>
 				<div className={styles.right}>
