@@ -3,7 +3,7 @@ import styles from "../assets/style/About.module.scss";
 export default function About() {
 	return (
 		<>
-			<div className="container d-flex justify-content-center align-items center mx-5">
+			<div className="container d-flex justify-content-center align-items center mx-5 my-5">
 				<div className={styles.image}>
 					<h1 className="text-white">
 						About <br />
