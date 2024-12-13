@@ -13,7 +13,7 @@ export default function About() {
 				</div>
 
 				<div className={styles.description}>
-					<p className="d-flex align-items-center justify-content-center h-100 text-white pe-5">
+					<p className="d-flex align-items-center justify-content-center h-100 text-white pe-5 mx-5">
 						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas,
 						nihil laudantium voluptatum inventore reiciendis ab dolorem porro
 						aliquid! Sed a nobis non sequi modi, amet alias omnis! Vitae
