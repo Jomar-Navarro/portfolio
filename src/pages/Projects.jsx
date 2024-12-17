@@ -7,7 +7,7 @@ export default function Projects() {
 	const [projects, setProjects] = useState([]); // Stato per i progetti
 	const [loading, setLoading] = useState(true); // Stato di caricamento
 	const [currentPage, setCurrentPage] = useState(1); // Pagina corrente
-	const [projectsPerPage] = useState(6); // Numero di progetti per pagina
+	const [projectsPerPage] = useState(4); // Numero di progetti per pagina
 	const username = "Jomar-Navarro"; // Inserisci il tuo username GitHub
 	const token = "tuo-token"; // Inserisci il tuo token personale
 
