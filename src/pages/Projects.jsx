@@ -6,6 +6,8 @@ import ProjectsApi from "../data/ProjectsAPI"; // Importa la funzione API
 export default function Projects() {
 	const [projects, setProjects] = useState([]); // Stato per i progetti
 	const [loading, setLoading] = useState(true); // Stato di caricamento
+	const [currentPage, setCurrentPage] = useState(1); // Pagina corrente
+	const [projectsPerPage] = useState(6); // Numero di progetti per pagina
 	const username = "Jomar-Navarro"; // Inserisci il tuo username GitHub
 	const token = "tuo-token"; // Inserisci il tuo token personale
 
@@ -26,12 +28,29 @@ export default function Projects() {
 		return <p className={styles.loading}>Caricamento progetti...</p>;
 	}
 
+	// Calcola i progetti da visualizzare per la pagina corrente
+	const indexOfLastProject = currentPage * projectsPerPage;
+	const indexOfFirstProject = indexOfLastProject - projectsPerPage;
+	const currentProjects = projects.slice(
+		indexOfFirstProject,
+		indexOfLastProject
+	);
+
+	// Funzione per gestire il cambiamento della pagina
+	const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+	// Calcola il numero di pagine
+	const pageNumbers = [];
+	for (let i = 1; i <= Math.ceil(projects.length / projectsPerPage); i++) {
+		pageNumbers.push(i);
+	}
+
 	return (
 		<>
 			<h1 className={styles.title}>Welcome to my Projects!</h1>
 
 			<div className={styles.wrapper}>
-				{projects.map((project, index) => (
+				{currentProjects.map((project, index) => (
 					<div
 						className={index % 2 === 0 ? styles.right : styles.left} // Alterna destra/sinistra
 						key={project.title}
@@ -49,6 +68,19 @@ export default function Projects() {
 				<div className={styles.deco}></div>
 				<div className={styles.decoTwo}></div>
 				<div className={styles.decoThree}></div>
+			</div>
+
+			{/* Paginazione */}
+			<div className={styles.pagination}>
+				{pageNumbers.map((number) => (
+					<button
+						key={number}
+						onClick={() => paginate(number)}
+						className={currentPage === number ? styles.active : ""}
+					>
+						{number}
+					</button>
+				))}
 			</div>
 		</>
 	);

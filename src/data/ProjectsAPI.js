@@ -17,6 +17,7 @@ export default async function ProjectsApi() {
 
 		// Filtra i dati utili (titolo, descrizione, URL)
 		return response.data.map((repo) => ({
+			id: repo.id,
 			title: repo.name,
 			description: repo.description,
 			url: repo.html_url,
