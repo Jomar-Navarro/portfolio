@@ -59,7 +59,7 @@ export default function Projects() {
 						{/* Puoi passare dati aggiuntivi a Card, se necessario */}
 						<div className={styles.descriptions}>
 							<h2>{project.title}</h2>
-							<p>{project.description || "No description available"}</p>
+							<p>{project.created_at || "No description available"}</p>
 						</div>
 					</div>
 				))}

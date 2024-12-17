@@ -40,6 +40,7 @@ export default async function ProjectsApi() {
 			title: repo.name,
 			description: repo.description || "No description available",
 			url: repo.html_url,
+			created_at: repo.created_at,
 		}));
 	} catch (error) {
 		console.error("Errore durante il recupero dei progetti:", error);
