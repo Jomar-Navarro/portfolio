@@ -4,6 +4,9 @@ import Card from "../assets/components/Card";
 import ProjectsApi from "../data/ProjectsAPI"; // Funzione API
 import Paginator from "../assets/components/Paginator";
 
+import { format } from "date-fns";
+import { it } from "date-fns/locale";
+
 export default function Projects() {
 	const [projects, setProjects] = useState([]);
 	const [loading, setLoading] = useState(true);
@@ -53,7 +56,13 @@ export default function Projects() {
 						<Card title={project.title} url={project.url} />
 						<div className={styles.descriptions}>
 							<h2>{project.title}</h2>
-							<p>{project.created_at || "No description available"}</p>
+							<p>
+								{project.created_at
+									? format(new Date(project.created_at), "dd/MM/yyyy", {
+											locale: it,
+									  })
+									: "No description available"}
+							</p>
 						</div>
 					</div>
 				))}
