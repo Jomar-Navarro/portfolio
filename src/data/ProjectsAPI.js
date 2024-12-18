@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default async function ProjectsApi() {
-	const token = import.meta.env.VITE_GITHUB_TOKEN; // Assicurati che la variabile sia nel file .env
+	const token = import.meta.env.VITE_GITHUB_TOKEN;
 	const username = import.meta.env.VITE_GITHUB_USERNAME;
 
 	const url = `https://api.github.com/users/${username}/repos`;

@@ -12,11 +12,9 @@ export default function Projects() {
 	const [loading, setLoading] = useState(true);
 	const [currentPage, setCurrentPage] = useState(1);
 	const [projectsPerPage] = useState(4);
-	const username = "Jomar-Navarro";
-	const token = "tuo-token";
 
 	useEffect(() => {
-		ProjectsApi(username, token)
+		ProjectsApi()
 			.then((data) => {
 				setProjects(data);
 				setLoading(false);
