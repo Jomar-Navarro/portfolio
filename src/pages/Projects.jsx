@@ -36,27 +36,6 @@ export default function Projects() {
 		indexOfLastProject
 	);
 
-	// Cambia pagina con animazione
-	const handlePaginate = (direction) => {
-		if (
-			direction === "next" &&
-			currentPage < Math.ceil(projects.length / projectsPerPage)
-		) {
-			setAnimationClass("transition-next");
-			setTimeout(() => {
-				setCurrentPage((prev) => prev + 1);
-				setAnimationClass("");
-			}, 300);
-		}
-		if (direction === "prev" && currentPage > 1) {
-			setAnimationClass("transition-prev");
-			setTimeout(() => {
-				setCurrentPage((prev) => prev - 1);
-				setAnimationClass("");
-			}, 300);
-		}
-	};
-
 	return (
 		<>
 			<h1 className={styles.title}>Welcome to my Projects!</h1>
