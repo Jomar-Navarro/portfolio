@@ -1,22 +1,22 @@
 import { useEffect, useState } from "react";
 import styles from "../assets/style/Project.module.scss";
 import Card from "../assets/components/Card";
-import ProjectsApi from "../data/ProjectsAPI"; // Importa la funzione API
+import ProjectsApi from "../data/ProjectsAPI"; // Funzione API
+import Paginator from "../assets/components/Paginator";
 
 export default function Projects() {
-	const [projects, setProjects] = useState([]); // Stato per i progetti
-	const [loading, setLoading] = useState(true); // Stato di caricamento
-	const [currentPage, setCurrentPage] = useState(1); // Pagina corrente
-	const [projectsPerPage] = useState(4); // Numero di progetti per pagina
-	const username = "Jomar-Navarro"; // Inserisci il tuo username GitHub
-	const token = "tuo-token"; // Inserisci il tuo token personale
+	const [projects, setProjects] = useState([]);
+	const [loading, setLoading] = useState(true);
+	const [currentPage, setCurrentPage] = useState(1);
+	const [projectsPerPage] = useState(4);
+	const username = "Jomar-Navarro";
+	const token = "tuo-token";
 
 	useEffect(() => {
-		// Recupera i progetti dall'API quando il componente è montato
 		ProjectsApi(username, token)
 			.then((data) => {
-				setProjects(data); // Salva i dati nello stato
-				setLoading(false); // Fine caricamento
+				setProjects(data);
+				setLoading(false);
 			})
 			.catch((error) => {
 				console.error("Errore nel caricamento dei progetti:", error);
@@ -28,7 +28,7 @@ export default function Projects() {
 		return <p className={styles.loading}>Caricamento progetti...</p>;
 	}
 
-	// Calcola i progetti da visualizzare per la pagina corrente
+	// Calcolo dei progetti da visualizzare
 	const indexOfLastProject = currentPage * projectsPerPage;
 	const indexOfFirstProject = indexOfLastProject - projectsPerPage;
 	const currentProjects = projects.slice(
@@ -36,27 +36,37 @@ export default function Projects() {
 		indexOfLastProject
 	);
 
-	// Funzione per gestire il cambiamento della pagina
-	const paginate = (pageNumber) => setCurrentPage(pageNumber);
-
-	// Calcola il numero di pagine
-	const pageNumbers = [];
-	for (let i = 1; i <= Math.ceil(projects.length / projectsPerPage); i++) {
-		pageNumbers.push(i);
-	}
+	// Cambia pagina con animazione
+	const handlePaginate = (direction) => {
+		if (
+			direction === "next" &&
+			currentPage < Math.ceil(projects.length / projectsPerPage)
+		) {
+			setAnimationClass("transition-next");
+			setTimeout(() => {
+				setCurrentPage((prev) => prev + 1);
+				setAnimationClass("");
+			}, 300);
+		}
+		if (direction === "prev" && currentPage > 1) {
+			setAnimationClass("transition-prev");
+			setTimeout(() => {
+				setCurrentPage((prev) => prev - 1);
+				setAnimationClass("");
+			}, 300);
+		}
+	};
 
 	return (
 		<>
 			<h1 className={styles.title}>Welcome to my Projects!</h1>
-
 			<div className={styles.wrapper}>
 				{currentProjects.map((project, index) => (
 					<div
-						className={index % 2 === 0 ? styles.right : styles.left} // Alterna destra/sinistra
+						className={index % 2 === 0 ? styles.right : styles.left}
 						key={project.title}
 					>
-						<Card title={project.title} url={project.url} />{" "}
-						{/* Puoi passare dati aggiuntivi a Card, se necessario */}
+						<Card title={project.title} url={project.url} />
 						<div className={styles.descriptions}>
 							<h2>{project.title}</h2>
 							<p>{project.created_at || "No description available"}</p>
@@ -70,18 +80,7 @@ export default function Projects() {
 				<div className={styles.decoThree}></div>
 			</div>
 
-			{/* Paginazione */}
-			<div className={styles.pagination}>
-				{pageNumbers.map((number) => (
-					<button
-						key={number}
-						onClick={() => paginate(number)}
-						className={currentPage === number ? styles.active : ""}
-					>
-						{number}
-					</button>
-				))}
-			</div>
+			<Paginator />
 		</>
 	);
 }
