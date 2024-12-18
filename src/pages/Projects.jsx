@@ -40,6 +40,11 @@ export default function Projects() {
 		<>
 			<h1 className={styles.title}>Welcome to my Projects!</h1>
 			<div className={styles.wrapper}>
+				{/* Elementi decorativi */}
+				<div className={styles.deco}></div>
+				<div className={styles.decoTwo}></div>
+				<div className={styles.decoThree}></div>
+				{/* Elementi decorativi */}
 				{currentProjects.map((project, index) => (
 					<div
 						className={index % 2 === 0 ? styles.right : styles.left}
@@ -52,11 +57,6 @@ export default function Projects() {
 						</div>
 					</div>
 				))}
-
-				{/* Elementi decorativi */}
-				<div className={styles.deco}></div>
-				<div className={styles.decoTwo}></div>
-				<div className={styles.decoThree}></div>
 			</div>
 
 			<Paginator
