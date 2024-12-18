@@ -59,7 +59,12 @@ export default function Projects() {
 				<div className={styles.decoThree}></div>
 			</div>
 
-			<Paginator />
+			<Paginator
+				currentPage={currentPage}
+				totalItems={projects.length}
+				itemsPerPage={projectsPerPage}
+				onPageChange={(page) => setCurrentPage(page)}
+			/>
 		</>
 	);
 }

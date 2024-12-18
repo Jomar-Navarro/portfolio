@@ -1,27 +1,28 @@
-import { useEffect, useState } from "react";
-
+import { useState } from "react";
 import styles from "../style/Paginator.module.scss";
 
-export default function Paginator() {
+export default function Paginator({
+	currentPage,
+	totalItems,
+	itemsPerPage,
+	onPageChange,
+}) {
 	const [animationClass, setAnimationClass] = useState(""); // Stato per l'animazione
-	const [currentPage, setCurrentPage] = useState(1);
+	const totalPages = Math.ceil(totalItems / itemsPerPage);
 
 	// Cambia pagina con animazione
 	const handlePaginate = (direction) => {
-		if (
-			direction === "next" &&
-			currentPage < Math.ceil(projects.length / projectsPerPage)
-		) {
+		if (direction === "next" && currentPage < totalPages) {
 			setAnimationClass("transition-next");
 			setTimeout(() => {
-				setCurrentPage((prev) => prev + 1);
+				onPageChange(currentPage + 1); // Aggiorna la pagina
 				setAnimationClass("");
 			}, 300);
 		}
 		if (direction === "prev" && currentPage > 1) {
 			setAnimationClass("transition-prev");
 			setTimeout(() => {
-				setCurrentPage((prev) => prev - 1);
+				onPageChange(currentPage - 1); // Aggiorna la pagina
 				setAnimationClass("");
 			}, 300);
 		}
@@ -29,7 +30,6 @@ export default function Paginator() {
 
 	return (
 		<>
-			{/* Paginazione */}
 			<div className={`${styles.paginationWrapper} ${animationClass}`}>
 				<svg
 					className={`${styles.btn} ${styles["btn--prev"]}`}
@@ -45,15 +45,19 @@ export default function Paginator() {
 
 				<div className={styles["pagination-container"]}>
 					<div
-						className={`${styles["little-dot"]} ${styles["little-dot--first"]}`}
+						className={`${styles["little-dot"]} ${
+							currentPage === 1 ? styles["active"] : ""
+						}`}
 					></div>
 					<div className={styles["little-dot"]}>
 						<div className={styles["big-dot-container"]}>
-							<div className={styles["big-dot"]}></div>
+							<div className={styles["big-dot"]}>{currentPage}</div>
 						</div>
 					</div>
 					<div
-						className={`${styles["little-dot"]} ${styles["little-dot--last"]}`}
+						className={`${styles["little-dot"]} ${
+							currentPage === totalPages ? styles["active"] : ""
+						}`}
 					></div>
 				</div>
 
