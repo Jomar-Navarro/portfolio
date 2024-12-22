@@ -60,3 +60,7 @@
 .card:hover::before {
 	transform: rotate(-90deg) scaleX(1.22) scaleY(0.83);
 }
+
+.link {
+	text-decoration: none;
+}

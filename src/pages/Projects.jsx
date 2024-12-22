@@ -4,9 +4,6 @@ import Card from "../assets/components/Card";
 import ProjectsApi from "../data/ProjectsAPI"; // Funzione API
 import Paginator from "../assets/components/Paginator";
 
-import { format } from "date-fns";
-import { it } from "date-fns/locale";
-
 export default function Projects() {
 	const [projects, setProjects] = useState([]);
 	const [loading, setLoading] = useState(true);
@@ -43,26 +40,13 @@ export default function Projects() {
 				<h1 className={styles.title}>Welcome to my Projects!</h1>
 				<div className={styles.wrapper}>
 					{/* Elementi decorativi */}
-					{/* <div className={styles.deco}></div>
-				<div className={styles.decoTwo}></div>
-				<div className={styles.decoThree}></div> */}
-					{/* Elementi decorativi */}
-
+					<div className={styles.deco}></div>
+					<div className={styles.decoTwo}></div>
+					<div className={styles.decoThree}></div>
+					{/* {/* Elementi decorativi */}
 					{currentProjects.map((project, index) => (
-						<div
-						// className={index % 2 === 0 ? styles.right : styles.left}
-						// key={project.title}
-						>
-							<Card title={project.title} url={project.url} />
-							{/* <div className={styles.descriptions}>
-							<p>
-								{project.created_at
-									? format(new Date(project.created_at), "dd/MM/yyyy", {
-											locale: it,
-									  })
-									: "No description available"}
-							</p>
-						</div> */}
+						<div key={index}>
+							<Card project={project} url={project.url} />
 						</div>
 					))}
 				</div>
