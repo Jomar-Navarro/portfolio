@@ -21,10 +21,10 @@ export default function Hero() {
 						<img src="src/assets/img/self.PNG" alt="myself" />
 					</div>
 				</div>
+			</div>
 
-				<div className="my-5">
-					<Swiper />
-				</div>
+			<div className="my-5">
+				<Swiper />
 			</div>
 		</>
 	);
