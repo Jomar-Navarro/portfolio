@@ -3,13 +3,13 @@ import styles from "../assets/style/About.module.scss";
 export default function About() {
 	return (
 		<>
-			<div className="container d-flex justify-content-center align-items center mx-5 my-5">
+			<div className="d-flex justify-content-center align-items center mx-5 my-5">
 				<div className={styles.image}>
 					<h1 className="text-white">
 						About <br />
 						me
 					</h1>
-					<img src="src/assets/img/about-img.jpg" alt="About Me" />
+					<img src="src/assets/img/about.svg" alt="About Me" />
 				</div>
 
 				<div className={styles.description}>
