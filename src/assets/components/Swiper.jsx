@@ -14,7 +14,7 @@ export default function App() {
 			loop={true}
 			autoplay={{
 				delay: 1500, // Imposta il tempo in millisecondi per ogni slide
-				disableOnInteraction: false, // Continua l'autoplay anche dopo l'interazione
+				disableOnInteraction: true, // Continua l'autoplay anche dopo l'interazione
 			}}
 			modules={[Autoplay]}
 			className={styles.swiper}
