@@ -11,7 +11,7 @@ export default function Projects() {
 	const [projects, setProjects] = useState([]);
 	const [loading, setLoading] = useState(true);
 	const [currentPage, setCurrentPage] = useState(1);
-	const [projectsPerPage] = useState(4);
+	const [projectsPerPage] = useState(6);
 
 	useEffect(() => {
 		ProjectsApi()
@@ -39,21 +39,22 @@ export default function Projects() {
 
 	return (
 		<>
-			<h1 className={styles.title}>Welcome to my Projects!</h1>
-			<div className={styles.wrapper}>
-				{/* Elementi decorativi */}
-				<div className={styles.deco}></div>
+			<div className="container">
+				<h1 className={styles.title}>Welcome to my Projects!</h1>
+				<div className={styles.wrapper}>
+					{/* Elementi decorativi */}
+					{/* <div className={styles.deco}></div>
 				<div className={styles.decoTwo}></div>
-				<div className={styles.decoThree}></div>
-				{/* Elementi decorativi */}
-				{currentProjects.map((project, index) => (
-					<div
-						className={index % 2 === 0 ? styles.right : styles.left}
-						key={project.title}
-					>
-						<Card title={project.title} url={project.url} />
-						<div className={styles.descriptions}>
-							<h2>{project.title}</h2>
+				<div className={styles.decoThree}></div> */}
+					{/* Elementi decorativi */}
+
+					{currentProjects.map((project, index) => (
+						<div
+						// className={index % 2 === 0 ? styles.right : styles.left}
+						// key={project.title}
+						>
+							<Card title={project.title} url={project.url} />
+							{/* <div className={styles.descriptions}>
 							<p>
 								{project.created_at
 									? format(new Date(project.created_at), "dd/MM/yyyy", {
@@ -61,17 +62,18 @@ export default function Projects() {
 									  })
 									: "No description available"}
 							</p>
+						</div> */}
 						</div>
-					</div>
-				))}
-			</div>
+					))}
+				</div>
 
-			<Paginator
-				currentPage={currentPage}
-				totalItems={projects.length}
-				itemsPerPage={projectsPerPage}
-				onPageChange={(page) => setCurrentPage(page)}
-			/>
+				<Paginator
+					currentPage={currentPage}
+					totalItems={projects.length}
+					itemsPerPage={projectsPerPage}
+					onPageChange={(page) => setCurrentPage(page)}
+				/>
+			</div>
 		</>
 	);
 }
