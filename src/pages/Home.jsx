@@ -3,6 +3,7 @@ import Projects from "./Projects";
 import About from "./About";
 
 import styles from "../assets/style/Home.module.scss";
+import Card from "../assets/components/Card";
 
 export default function Home() {
 	return (
@@ -17,7 +18,7 @@ export default function Home() {
 				</section>
 
 				<section>
-					<Projects />
+					<Card project={project} />
 				</section>
 			</main>
 		</>
