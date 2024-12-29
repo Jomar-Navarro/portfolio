@@ -6,9 +6,9 @@ import { it } from "date-fns/locale";
 export default function Card({ project, url }) {
 	return (
 		<>
-			<div class={styles.card}>
+			<div className={styles.card}>
 				<a className={styles.link} href={url} target="_blank" rel="noreferrer">
-					<p class={styles.heading}>{project.title}</p>
+					<p className={styles.heading}>{project.title}</p>
 					<p className="p-0 m-0">Made By</p>
 
 					<div className={styles.descriptions}>
