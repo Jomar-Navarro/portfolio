@@ -1,0 +1,64 @@
+.container {
+	margin-top: 20px;
+}
+
+.roadmap {
+	position: relative;
+	margin: 50px 0;
+	padding: 0 20px;
+}
+
+.roadmap::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 4px;
+	height: 100%;
+	background-color: #fff;
+}
+
+.roadmapItem {
+	position: relative;
+	margin: 20px 0;
+	padding-left: 50%;
+}
+
+.roadmapItem:nth-child(even) {
+	padding-left: 0;
+	padding-right: 50%;
+	text-align: right;
+}
+
+.roadmapContent {
+	position: relative;
+	background-color: #333;
+	padding: 20px;
+	border-radius: 8px;
+}
+
+.roadmapItem:nth-child(even) .roadmapContent {
+	left: -100%;
+}
+
+.roadmapItem:nth-child(odd) .roadmapContent {
+	left: 0;
+}
+
+.roadmapContent h2 {
+	margin: 0 0 10px;
+	font-size: 1.5rem;
+	color: #fc00ff;
+}
+
+.roadmapContent p {
+	margin: 0 0 10px;
+	font-size: 1rem;
+	color: #fff;
+}
+
+.roadmapContent span {
+	font-size: 0.875rem;
+	color: #ccc;
+}
