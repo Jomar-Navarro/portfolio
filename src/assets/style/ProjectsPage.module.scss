@@ -22,13 +22,15 @@
 .roadmapItem {
 	position: relative;
 	margin: 20px 0;
-	padding-left: 50%;
+	width: 50%;
 }
 
 .roadmapItem:nth-child(even) {
-	padding-left: 0;
-	padding-right: 50%;
-	text-align: right;
+	left: 115%;
+}
+
+.roadmapItem:nth-child(odd) {
+	right: 15%;
 }
 
 .roadmapContent {
@@ -39,11 +41,11 @@
 }
 
 .roadmapItem:nth-child(even) .roadmapContent {
-	left: -100%;
+	transform: translateX(-100%);
 }
 
 .roadmapItem:nth-child(odd) .roadmapContent {
-	left: 0;
+	transform: translateX(0);
 }
 
 .roadmapContent h2 {
