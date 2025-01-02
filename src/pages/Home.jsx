@@ -2,19 +2,16 @@ import React, { useEffect, useState } from "react";
 import Hero from "../assets/components/Hero";
 import About from "./About";
 import Card from "../assets/components/Card";
-import axios from "axios"; // Assicurati di avere axios installato
 import Paginator from "../assets/components/Paginator";
 import ProjectsApi from "../data/ProjectsAPI";
-import Projects from "../pages/Projects";
 
 import styles from "../assets/style/Home.module.scss";
 
 export default function Home() {
 	const [projects, setProjects] = useState([]);
 	const [loading, setLoading] = useState(true);
-	const [error, setError] = useState(null);
 	const [currentPage, setCurrentPage] = useState(1);
-	const projectsPerPage = 6; // Numero di progetti per pagina
+	const [projectsPerPage] = useState(6);
 
 	useEffect(() => {
 		ProjectsApi()
@@ -29,21 +26,16 @@ export default function Home() {
 	}, []);
 
 	if (loading) {
-		return <div>Loading...</div>;
+		return <p className={styles.loading}>Caricamento progetti...</p>;
 	}
 
-	if (error) {
-		return <div>Error: {error}</div>;
-	}
-
-	// Calcola i progetti da visualizzare nella pagina corrente
+	// Calcolo dei progetti da visualizzare
 	const indexOfLastProject = currentPage * projectsPerPage;
 	const indexOfFirstProject = indexOfLastProject - projectsPerPage;
 	const currentProjects = projects.slice(
 		indexOfFirstProject,
 		indexOfLastProject
 	);
-
 	return (
 		<>
 			<main>
@@ -56,7 +48,21 @@ export default function Home() {
 				</section>
 
 				<section>
-					<Projects />
+					<div className="container">
+						<h1 className={styles.title}>Welcome to my Projects!</h1>
+						<div className={styles.wrapper}>
+							{currentProjects.map((project, index) => (
+								<Card key={index} project={project} />
+							))}
+						</div>
+					</div>
+
+					<Paginator
+						currentPage={currentPage}
+						totalItems={projects.length}
+						itemsPerPage={projectsPerPage}
+						onPageChange={(page) => setCurrentPage(page)}
+					/>
 				</section>
 			</main>
 		</>

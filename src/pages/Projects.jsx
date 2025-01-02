@@ -3,6 +3,7 @@ import styles from "../assets/style/Project.module.scss";
 import Card from "../assets/components/Card";
 import ProjectsApi from "../data/ProjectsAPI"; // Funzione API
 import Paginator from "../assets/components/Paginator";
+import ProjectsPage from "../assets/components/ProjectsPage";
 
 export default function Projects() {
 	const [projects, setProjects] = useState([]);
@@ -37,21 +38,7 @@ export default function Projects() {
 	return (
 		<>
 			<div className="container">
-				<h1 className={styles.title}>Welcome to my Projects!</h1>
-				<div className={styles.wrapper}>
-					{currentProjects.map((project, index) => (
-						<div key={index}>
-							<Card project={project} url={project.url} />
-						</div>
-					))}
-				</div>
-
-				<Paginator
-					currentPage={currentPage}
-					totalItems={projects.length}
-					itemsPerPage={projectsPerPage}
-					onPageChange={(page) => setCurrentPage(page)}
-				/>
+				<ProjectsPage />
 			</div>
 		</>
 	);

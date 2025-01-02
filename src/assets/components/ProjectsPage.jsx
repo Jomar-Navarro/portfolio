@@ -1,5 +1,3 @@
-import Card from "./Card";
-
 export default function ProjectsPage() {
 	return (
 		<>
@@ -7,9 +5,7 @@ export default function ProjectsPage() {
 				<h1>Welcome to My Projects</h1>
 				<p>Here's all the projects that i've worked on.</p>
 
-				<div className="d-flex justify-content-center align-items-center">
-					<Card />
-				</div>
+				<div className="d-flex justify-content-center align-items-center"></div>
 			</div>
 		</>
 	);
