@@ -16,7 +16,10 @@ export default function Home() {
 	useEffect(() => {
 		ProjectsApi()
 			.then((data) => {
-				setProjects(data);
+				const sortedProjects = data.sort(
+					(a, b) => new Date(b.created_at) - new Date(a.created_at)
+				);
+				setProjects(sortedProjects);
 				setLoading(false);
 			})
 			.catch((error) => {
