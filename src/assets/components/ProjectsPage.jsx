@@ -44,11 +44,11 @@ export default function ProjectsPage() {
 				<div className={styles.roadmap}>
 					{currentProjects.map((project, index) => (
 						<div key={index} className={styles.roadmapItem}>
-							<div className={styles.roadmapContent}>
+							<Card project={project} className={styles.roadmapContent}>
 								<h2>{project.title}</h2>
 								<p>{project.description}</p>
 								<span>{new Date(project.created_at).toLocaleDateString()}</span>
-							</div>
+							</Card>
 						</div>
 					))}
 				</div>
