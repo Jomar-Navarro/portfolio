@@ -1,0 +1,43 @@
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.aboutContent {
+	text-align: center;
+
+	h1 {
+		font-size: 3rem;
+		font-weight: bold;
+		color: #ffffff;
+	}
+
+	h2 {
+		font-size: 2rem;
+		margin-top: 40px;
+		color: #ffcc00; /* Personalizza il colore */
+	}
+
+	p {
+		font-size: 1.2rem;
+		line-height: 1.8;
+		color: #e0e0e0;
+	}
+
+	ul {
+		list-style-type: disc;
+		margin: 20px 0;
+		padding-left: 40px;
+
+		li {
+			font-size: 1.2rem;
+			line-height: 1.8;
+			color: #e0e0e0;
+
+			strong {
+				color: #ffcc00; /* Personalizza il colore */
+			}
+		}
+	}
+}
