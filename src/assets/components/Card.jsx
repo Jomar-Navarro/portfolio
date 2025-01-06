@@ -10,6 +10,7 @@ export default function Card({ project, url }) {
 				<a className={styles.link} href={url} target="_blank" rel="noreferrer">
 					<p className={styles.heading}>{project.title}</p>
 					<p className="p-0 m-0">Made By</p>
+					<p>Jomar Navarro</p>
 
 					<div className={styles.descriptions}>
 						<p>
@@ -19,7 +20,6 @@ export default function Card({ project, url }) {
 								  })
 								: "No date available"}
 						</p>
-						<p>Jomar Navarro</p>
 					</div>
 				</a>
 			</div>

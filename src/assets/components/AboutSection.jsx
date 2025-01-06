@@ -5,7 +5,7 @@ export default function AboutPage() {
 		<>
 			<div className="d-flex justify-content-center align-items center mx-5 my-5">
 				<div className={styles.description}>
-					<p className="d-flex align-items-center flex-column justify-content-center h-100 text-white pe-5 mx-5">
+					<p className="d-flex align-items-center flex-column justify-content-center h-100 text-white pe-5 mx-5 text-end">
 						Ciao! Sono Jomar, uno sviluppatore web full-stack appassionato di
 						tecnologia e design. Con esperienza in linguaggi come JavaScript,
 						Vue.js e React, amo trasformare idee in soluzioni digitali eleganti
@@ -17,17 +17,17 @@ export default function AboutPage() {
 						sfide per crescere professionalmente e contribuire a progetti
 						innovativi. Quando non sono davanti al computer, mi alleno e sogno
 						di costruire un'AI personale come Jarvis di Iron Man.
-						<span className="pt-5 text-start w-100 fs-3">
+						<span className="pt-5 text-start w-100 fs-3 text-end">
 							Ti va di lavorare insieme?
 						</span>
 					</p>
 				</div>
 
 				<div className={styles.image}>
-					<h1 className="text-white text-end">
+					<h3 className="text-white text-end">
 						About <br />
 						me
-					</h1>
+					</h3>
 					<img src="src/assets/img/about-section.png" alt="About Me" />
 				</div>
 			</div>
