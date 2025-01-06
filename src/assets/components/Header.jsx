@@ -14,8 +14,8 @@ export default function Header() {
 									to="/"
 									className={({ isActive }) =>
 										isActive
-											? `${styles["nav-link"]} ${styles.isActive} fs-5`
-											: "nav-link text-white fs-5"
+											? `${styles["nav-link"]} ${styles.isActive} fs-4`
+											: `${styles["nav-link"]} text-white fs-4`
 									}
 								>
 									Home
@@ -26,8 +26,8 @@ export default function Header() {
 									to="/about"
 									className={({ isActive }) =>
 										isActive
-											? `${styles["nav-link"]} ${styles.isActive} fs-5`
-											: "nav-link text-white fs-5"
+											? `${styles["nav-link"]} ${styles.isActive} fs-4`
+											: `${styles["nav-link"]} text-white fs-4`
 									}
 								>
 									About Me
@@ -38,8 +38,8 @@ export default function Header() {
 									to="/projects"
 									className={({ isActive }) =>
 										isActive
-											? `${styles["nav-link"]} ${styles.isActive} fs-5`
-											: "nav-link text-white fs-5"
+											? `${styles["nav-link"]} ${styles.isActive} fs-4`
+											: `${styles["nav-link"]} text-white fs-4`
 									}
 								>
 									Projects
