@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Hero from "../assets/components/Hero";
-import About from "./About";
+import About from "../assets/components/AboutSection";
 import Card from "../assets/components/Card";
 import Paginator from "../assets/components/Paginator";
 import ProjectsApi from "../data/ProjectsAPI";
