@@ -12,8 +12,9 @@ export default function App() {
 			centeredSlides={true}
 			slidesPerView={5}
 			loop={true}
+			speed={1500}
 			autoplay={{
-				delay: 1500, // Imposta il tempo in millisecondi per ogni slide
+				delay: 0, // Imposta il tempo in millisecondi per ogni slide
 				disableOnInteraction: true, // Continua l'autoplay anche dopo l'interazione
 			}}
 			modules={[Autoplay]}
