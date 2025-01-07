@@ -13,7 +13,7 @@
 
 	45%,
 	55% {
-		width: 5em;
+		width: 10em;
 	}
 
 	90%,
@@ -81,9 +81,9 @@
 	display: inline-block;
 	white-space: nowrap;
 	overflow: hidden;
-	border-right: 2px solid #a41fb9;
+	border-right: 2px solid #fff;
 	animation: typeAndDelete 4s steps(20) infinite,
 		blinkCursor 0.5s step-end infinite alternate;
-	color: #a41fb9;
+	color: #fff;
 	font-weight: 600;
 }
