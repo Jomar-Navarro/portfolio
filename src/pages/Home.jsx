@@ -21,7 +21,7 @@ export default function Home() {
 					(a, b) => new Date(b.created_at) - new Date(a.created_at)
 				);
 				setProjects(sortedProjects);
-				setLoading(false);
+				setLoading(true);
 			})
 			.catch((error) => {
 				console.error("Errore nel caricamento dei progetti:", error);

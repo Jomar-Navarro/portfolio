@@ -1,7 +1,25 @@
+import styles from "../style/Loader.module.scss";
+
 export default function Loader() {
 	return (
-		<div className="loader">
-			<div className="loader__spinner">Loading...</div>
-		</div>
+		<>
+			<div className="container">
+				<div className="d-flex justify-content-center align-items-center">
+					<div className={styles.terminalLoader}>
+						<div className={styles.terminalHeader}>
+							<div className={styles.terminalTitle}>Status</div>
+							<div className={styles.terminalControls}>
+								<div className={`${styles.control} ${styles.close}`}></div>
+								<div className={`${styles.control} ${styles.minimize}`}></div>
+								<div className={`${styles.control} ${styles.maximize}`}></div>
+							</div>
+						</div>
+						<div className={styles.content}>
+							<div className={styles.text}>Loading...</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</>
 	);
 }
