@@ -15,7 +15,13 @@ export default function Loader() {
 							</div>
 						</div>
 						<div className={styles.content}>
-							<div className={styles.text}>Loading...</div>
+							<pre>
+								<code>
+									<div className={styles.text}>
+										&lt;div&gt;Loading...&lt;/div&gt;
+									</div>
+								</code>
+							</pre>
 						</div>
 					</div>
 				</div>
