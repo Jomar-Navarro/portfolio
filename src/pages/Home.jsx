@@ -6,6 +6,7 @@ import Paginator from "../assets/components/Paginator";
 import ProjectsApi from "../data/ProjectsAPI";
 
 import styles from "../assets/style/Home.module.scss";
+import Loader from "../assets/components/Loader";
 
 export default function Home() {
 	const [projects, setProjects] = useState([]);
@@ -29,7 +30,7 @@ export default function Home() {
 	}, []);
 
 	if (loading) {
-		return <p className={styles.loading}>Caricamento progetti...</p>;
+		return <Loader className={styles.loading} />;
 	}
 
 	// Calcolo dei progetti da visualizzare
