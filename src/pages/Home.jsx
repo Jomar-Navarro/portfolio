@@ -21,7 +21,7 @@ export default function Home() {
 					(a, b) => new Date(b.created_at) - new Date(a.created_at)
 				);
 				setProjects(sortedProjects);
-				setLoading(true);
+				setLoading(false);
 			})
 			.catch((error) => {
 				console.error("Errore nel caricamento dei progetti:", error);
@@ -30,7 +30,7 @@ export default function Home() {
 	}, []);
 
 	if (loading) {
-		return <Loader className={styles.loading} />;
+		return <Loader />;
 	}
 
 	// Calcolo dei progetti da visualizzare
