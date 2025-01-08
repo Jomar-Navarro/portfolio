@@ -37,7 +37,7 @@ export default function ProjectsPage() {
 
 	return (
 		<>
-			<div className="container text-center text-white">
+			<div className="container text-center text-white mt-5">
 				<h1>Welcome to My Projects</h1>
 				<p>Here's all the projects that I've worked on.</p>
 
