@@ -41,10 +41,10 @@ export default function ProjectsPage() {
 				<h1>Welcome to My Projects</h1>
 				<p>Here's all the projects that I've worked on.</p>
 
-				<div className={styles.roadmap}>
+				<div className="row justify-content-center">
 					{currentProjects.map((project, index) => (
-						<div key={index} className={styles.roadmapItem}>
-							<Card project={project} className={styles.roadmapContent}>
+						<div key={index} className="col-3 m-5">
+							<Card project={project}>
 								<h2>{project.title}</h2>
 								<p>{project.description}</p>
 								<span>{new Date(project.created_at).toLocaleDateString()}</span>
