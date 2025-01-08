@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "../style/Paginator.module.scss";
 
 export default function Paginator({
@@ -7,10 +7,9 @@ export default function Paginator({
 	itemsPerPage,
 	onPageChange,
 }) {
-	const [animationClass, setAnimationClass] = useState(""); // Stato per l'animazione
+	const [animationClass, setAnimationClass] = useState("");
 	const totalPages = Math.ceil(totalItems / itemsPerPage);
 
-	// Cambia pagina con animazione
 	const handlePaginate = (direction) => {
 		if (direction === "next" && currentPage < totalPages) {
 			setAnimationClass("transition-next");

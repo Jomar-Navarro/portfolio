@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import ProjectsApi from "../../data/ProjectsAPI";
 import Card from "./Card";
 import styles from "../style/ProjectsPage.module.scss";
+import Paginator from "./Paginator";
 
 export default function ProjectsPage() {
 	const [projects, setProjects] = useState([]);
@@ -52,6 +53,13 @@ export default function ProjectsPage() {
 						</div>
 					))}
 				</div>
+
+				<Paginator
+					currentPage={currentPage}
+					totalItems={projects.length}
+					itemsPerPage={projectsPerPage}
+					onPageChange={(page) => setCurrentPage(page)}
+				/>
 			</div>
 		</>
 	);
