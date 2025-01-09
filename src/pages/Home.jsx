@@ -6,11 +6,9 @@ import Paginator from "../assets/components/Paginator";
 import ProjectsApi from "../data/ProjectsAPI";
 
 import styles from "../assets/style/Home.module.scss";
-import Loader from "../assets/components/Loader";
 
 export default function Home() {
 	const [projects, setProjects] = useState([]);
-	const [loading, setLoading] = useState(true);
 	const [currentPage, setCurrentPage] = useState(1);
 	const [projectsPerPage] = useState(6);
 
@@ -28,10 +26,6 @@ export default function Home() {
 				setLoading(false);
 			});
 	}, []);
-
-	if (loading) {
-		return <Loader />;
-	}
 
 	// Calcolo dei progetti da visualizzare
 	const indexOfLastProject = currentPage * projectsPerPage;

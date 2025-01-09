@@ -26,10 +26,11 @@ export default function About() {
 				<div className={`${styles.aboutContent} text-white`}>
 					<h1 className="mb-4">About Me</h1>
 					<p className={`${styles.intro}`}>
-						Ciao! Mi chiamo Jomar e sono uno sviluppatore web full-stack con una
-						forte passione per la tecnologia e l'innovazione. A {age} anni, ho
-						avuto la possibilità di lavorare su progetti entusiasmanti che mi
-						hanno permesso di crescere sia a livello tecnico che personale.
+						Ciao! Mi chiamo Jomar, ma puoi chiamarmi Jo. Sono uno sviluppatore
+						web full-stack con una forte passione per la tecnologia e
+						l'innovazione. A {age} anni, ho avuto la possibilità di lavorare su
+						progetti entusiasmanti che mi hanno permesso di crescere sia a
+						livello tecnico che personale.
 					</p>
 					<h2 className="mt-5">Il Mio Percorso</h2>
 					<p>
@@ -84,7 +85,7 @@ export default function About() {
 						fantascienza e dal mondo dell'AI, e sogno un giorno di costruire una
 						soluzione simile a Jarvis di Iron Man.
 					</p>
-					<p className="mt-4">
+					<p className="mt-4 fs-2">
 						<strong>Ti va di lavorare insieme?</strong> Sentiti libero di
 						contattarmi!
 					</p>
