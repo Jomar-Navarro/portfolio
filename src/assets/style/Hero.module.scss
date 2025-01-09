@@ -19,12 +19,19 @@
 	margin: 50px;
 	padding: 20px;
 	text-align: left;
+	.mainTitle {
+		font-size: 3rem;
+		font-weight: 900;
+		font-family: "Insonsolata", monospace;
+		line-height: 3rem;
+	}
+
 	h1 {
 		font-size: 3.6rem;
 		font-weight: 900;
 		font-family: "Inconsolata", monospace;
 	}
-	p {
+	.subtitle {
 		font-family: "Inconsolata", monospace;
 		margin-top: 40px;
 		border-left: 2px solid #a41fb9;
