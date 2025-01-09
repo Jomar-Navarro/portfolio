@@ -1,23 +1,16 @@
-.container {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 20px;
-}
-
 .aboutContent {
-	text-align: center;
-
+	font-family: "Inconsolata", monospace;
 	h1 {
 		font-size: 3rem;
 		font-weight: bold;
-		color: #ffffff;
+		color: #a41fb9;
 		font-family: "Inconsolata", monospace;
 	}
 
 	h2 {
 		font-size: 2rem;
 		margin-top: 40px;
-		color: #ffcc00; /* Personalizza il colore */
+		color: #a41fb9; /* Personalizza il colore */
 		font-family: "Inconsolata", monospace;
 	}
 
@@ -38,7 +31,7 @@
 			color: #e0e0e0;
 
 			strong {
-				color: #ffcc00; /* Personalizza il colore */
+				color: #a41fb9; /* Personalizza il colore */
 			}
 		}
 	}

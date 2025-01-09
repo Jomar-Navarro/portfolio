@@ -1,16 +1,33 @@
 import styles from "../assets/style/About.module.scss";
 
 export default function About() {
+	const birthDate = "2002-03-31";
+
+	const calculateAge = (birthDate) => {
+		const today = new Date();
+		const birthDateObj = new Date(birthDate);
+		let age = today.getFullYear() - birthDateObj.getFullYear();
+		const monthDifference = today.getMonth() - birthDateObj.getMonth();
+
+		if (
+			monthDifference < 0 ||
+			(monthDifference === 0 && today.getDate() < birthDateObj.getDate())
+		) {
+			age--;
+		}
+
+		return age;
+	};
+
+	const age = calculateAge(birthDate);
 	return (
 		<>
-			<div className={`${styles.container} container`}>
-				<div
-					className={`${styles.aboutContent} text-white d-flex justify-content-center align-items-center flex-column mx-5 my-5`}
-				>
+			<div className="container">
+				<div className={`${styles.aboutContent} text-white`}>
 					<h1 className="mb-4">About Me</h1>
-					<p className={`${styles.intro} text-center`}>
+					<p className={`${styles.intro}`}>
 						Ciao! Mi chiamo Jomar e sono uno sviluppatore web full-stack con una
-						forte passione per la tecnologia e l'innovazione. A 22 anni, ho già
+						forte passione per la tecnologia e l'innovazione. A {age} anni, ho
 						avuto la possibilità di lavorare su progetti entusiasmanti che mi
 						hanno permesso di crescere sia a livello tecnico che personale.
 					</p>
