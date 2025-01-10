@@ -29,7 +29,7 @@ function App() {
 		// Simula un caricamento di 3 secondi
 		const timer = setTimeout(() => {
 			setLoading(false);
-		}, 3000);
+		}, 1000);
 
 		// Pulisce il timer quando il componente viene smontato
 		return () => clearTimeout(timer);

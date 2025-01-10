@@ -17,7 +17,7 @@ export default function AboutPage() {
 						sfide per crescere professionalmente e contribuire a progetti
 						innovativi. Quando non sono davanti al computer, mi alleno e sogno
 						di costruire un'AI personale come Jarvis di Iron Man.
-						<span className="pt-5 text-start w-100 fs-3 text-end">
+						<span className="pt-5 text-start w-100 fs-3 text-end fw-bolder">
 							Ti va di lavorare insieme?
 						</span>
 					</p>
@@ -25,7 +25,8 @@ export default function AboutPage() {
 
 				<div className={styles.image}>
 					<h3 className="text-white text-end">
-						About <br />
+						Su di
+						<br />
 						me
 					</h3>
 					<img src="src/assets/img/about-section.png" alt="About Me" />

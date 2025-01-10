@@ -47,7 +47,9 @@ export default function Home() {
 
 				<section>
 					<div className="container">
-						<h1 className={styles.title}>Welcome to my Projects!</h1>
+						<h1 className={styles.title}>
+							Benvenuti ai miei progetti migliori!
+						</h1>
 						<div className={styles.wrapper}>
 							{currentProjects.map((project, index) => (
 								<Card key={index} project={project} />

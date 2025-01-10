@@ -88,7 +88,7 @@
 
 .title {
 	text-align: center;
-	font-size: 3rem;
+	font-size: 2.5rem;
 	font-weight: 900;
 	margin: 0px 0px 50 0px;
 	padding: 50px 0px 50px 00px;
@@ -107,7 +107,6 @@
 .title:after,
 .title:before {
 	content: " ";
-	display: block;
 	border-bottom: 1px solid rgba(85, 10, 101, 1);
 	border-top: 1px solid rgba(85, 10, 101, 1);
 	height: 10px;
