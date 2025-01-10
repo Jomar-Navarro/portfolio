@@ -45,7 +45,7 @@ export default function ProjectsPage() {
 				<div className="row justify-content-center">
 					{currentProjects.map((project, index) => (
 						<div key={index} className="col-3 m-5">
-							<Card project={project}>
+							<Card project={project} url={project.url}>
 								<h2>{project.title}</h2>
 								<p>{project.description}</p>
 								<span>{new Date(project.created_at).toLocaleDateString()}</span>
