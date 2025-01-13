@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import ProjectsApi from "../../data/ProjectsAPI";
 import Card from "./Card";
-import styles from "../style/ProjectsPage.module.scss";
+import Loader from "./Loader";
 import Paginator from "./Paginator";
+
+import styles from "../style/ProjectsPage.module.scss";
 
 export default function ProjectsPage() {
 	const [projects, setProjects] = useState([]);
@@ -33,7 +35,7 @@ export default function ProjectsPage() {
 	);
 
 	if (loading) {
-		return <p className={styles.loading}>Caricamento progetti...</p>;
+		return <Loader />;
 	}
 
 	return (
