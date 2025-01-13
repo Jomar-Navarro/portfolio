@@ -4,12 +4,12 @@ import About from "../assets/components/AboutSection";
 import Card from "../assets/components/Card";
 import Paginator from "../assets/components/Paginator";
 import ProjectsApi from "../data/ProjectsAPI";
-
 import styles from "../assets/style/Home.module.scss";
 
 export default function Home() {
 	const [projects, setProjects] = useState([]);
 	const [currentPage, setCurrentPage] = useState(1);
+	const [loading, setLoading] = useState(true);
 	const [projectsPerPage] = useState(6);
 
 	useEffect(() => {
@@ -27,13 +27,16 @@ export default function Home() {
 			});
 	}, []);
 
-	// Calcolo dei progetti da visualizzare
-	const indexOfLastProject = currentPage * projectsPerPage;
-	const indexOfFirstProject = indexOfLastProject - projectsPerPage;
-	const currentProjects = projects.slice(
-		indexOfFirstProject,
-		indexOfLastProject
+	// IDs dei progetti migliori
+	const bestProjectIds = [
+		815135478, 817218543, 777287078, 781472768, 830921587, 772014383,
+	];
+
+	// Filtra i progetti migliori
+	const bestProjects = projects.filter((project) =>
+		bestProjectIds.includes(project.id)
 	);
+
 	return (
 		<>
 			<main>
@@ -46,23 +49,16 @@ export default function Home() {
 				</section>
 
 				<section>
-					<div className="container">
+					<div className="container my-5">
 						<h1 className={styles.title}>
 							Benvenuti ai miei progetti migliori!
 						</h1>
 						<div className={styles.wrapper}>
-							{currentProjects.map((project, index) => (
+							{bestProjects.map((project, index) => (
 								<Card key={index} project={project} />
 							))}
 						</div>
 					</div>
-
-					<Paginator
-						currentPage={currentPage}
-						totalItems={projects.length}
-						itemsPerPage={projectsPerPage}
-						onPageChange={(page) => setCurrentPage(page)}
-					/>
 				</section>
 			</main>
 		</>
