@@ -30,7 +30,7 @@ export default function Header() {
 											: `${styles["nav-link"]} text-white fs-4`
 									}
 								>
-									About Me
+									Chi sono
 								</NavLink>
 							</li>
 							<li className="nav-item">
@@ -42,7 +42,7 @@ export default function Header() {
 											: `${styles["nav-link"]} text-white fs-4`
 									}
 								>
-									Projects
+									Progetti
 								</NavLink>
 							</li>
 						</ul>
