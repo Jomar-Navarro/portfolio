@@ -1,13 +1,6 @@
 .mySwiper {
-	margin-top: 100px;
-	.swiper-slide {
-		transition: transform 0.5s ease, opacity 0.5s ease; /* Transizione fluida */
-	}
-
-	.swiper-slide-active {
-		transform: scale(1.1); /* Aumenta la dimensione della slide attiva */
-		opacity: 1; /* Mantieni l'opacità al massimo */
-	}
+	margin-top: 10px;
+	margin-bottom: 100px;
 }
 
 .swiper {
@@ -16,14 +9,6 @@
 	padding: 10px 0px;
 	border-top: 1px solid rebeccapurple;
 	border-bottom: 1px solid rebeccapurple;
-}
-
-.swiper-slide {
-	/* Center slide text vertically */
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	transform: translate(50%, 50%);
 }
 
 .logo {
