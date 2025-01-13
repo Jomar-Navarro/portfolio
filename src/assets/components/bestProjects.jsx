@@ -37,7 +37,7 @@ export default function BestProjects() {
 			<h1 className={styles.title}>Benvenuti ai miei progetti migliori!</h1>
 			<div className={styles.wrapper}>
 				{bestProjects.map((project, index) => (
-					<Card key={index} project={project} />
+					<Card key={index} project={project} url={project.url} />
 				))}
 			</div>
 		</div>
