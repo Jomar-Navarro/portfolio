@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Card from "../assets/components/Card";
-import ProjectsApi from "../data/ProjectsAPI";
-import styles from "../assets/style/Home.module.scss";
+import Card from "../components/Card";
+import ProjectsApi from "../../data/ProjectsAPI";
+import styles from "../style/BestProjects.module.scss";
 
 export default function BestProjects() {
 	const [projects, setProjects] = useState([]);
