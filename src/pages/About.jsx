@@ -25,11 +25,11 @@ export default function About() {
 			<div className="container">
 				<div className={`${styles.aboutContent} row justify-content-center`}>
 					<div className="col-md-8">
-						<h1 className="text-center mb-4">About Me</h1>
+						<h1 className="text-center my-4">About Me</h1>
 
 						{/* Introduzione Personale */}
 						<div className="mb-5">
-							<h2 className="h4">Introduzione Personale</h2>
+							<h2>Introduzione Personale</h2>
 							<p>
 								Mi chiamo <strong>Jomar Navarro</strong> e sono una persona
 								curiosa, competitiva e appassionata di tecnologia. Adoro
