@@ -31,12 +31,14 @@ export default function About() {
 						<div className="mb-5">
 							<h2 className="h4">Introduzione Personale</h2>
 							<p>
-								Sono <strong>Jomar Navarro</strong>, un{" "}
-								<strong>Full Stack Web Developer</strong> con una passione
-								inarrestabile per la tecnologia e l'innovazione. Mi entusiasma
-								trasformare idee in soluzioni digitali scalabili, combinando
-								competenze di frontend e backend per creare esperienze utente
-								intuitive ed efficienti.
+								Mi chiamo <strong>Jomar Navarro</strong> e sono una persona
+								curiosa, competitiva e appassionata di tecnologia. Adoro
+								mettermi in gioco e trovare modi innovativi per risolvere
+								problemi complessi, creando esperienze digitali che uniscono
+								creatività e funzionalità. Il mio lavoro come{" "}
+								<strong>Full Stack Web Developer</strong> mi permette di dare
+								forma alle idee, rendendole strumenti utili e accessibili per
+								tutti.
 							</p>
 						</div>
 
