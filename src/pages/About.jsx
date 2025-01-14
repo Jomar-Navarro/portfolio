@@ -23,72 +23,138 @@ export default function About() {
 	return (
 		<>
 			<div className="container">
-				<div className={`${styles.aboutContent} text-white`}>
-					<h1 className="mb-4">About Me</h1>
-					<p className={`${styles.intro}`}>
-						Ciao! Mi chiamo Jomar, ma puoi chiamarmi Jo. Sono uno sviluppatore
-						web full-stack con una forte passione per la tecnologia e
-						l'innovazione. A {age} anni, ho avuto la possibilità di lavorare su
-						progetti entusiasmanti che mi hanno permesso di crescere sia a
-						livello tecnico che personale.
-					</p>
-					<h2 className="mt-5">Il Mio Percorso</h2>
-					<p>
-						Il mio viaggio nel mondo del web development è iniziato con la
-						scoperta di HTML e CSS, ma presto ho ampliato le mie conoscenze a
-						linguaggi e framework come JavaScript, Vue.js, React, PHP, Laravel e
-						MySQL.
-					</p>
-					<p>Tra i progetti più significativi che ho realizzato, ricordo:</p>
-					<ul>
-						<li>
-							<strong>Sito di Delivery Food:</strong> Collaborando con un team,
-							ho contribuito a sviluppare un sito per il food delivery,
-							integrando pagamenti sicuri tramite Braintree e gestendo la
-							comunicazione con il backend tramite Axios.
-						</li>
-						<li>
-							<strong>Hackathon UI per un Totem:</strong> Durante un hackathon,
-							ho progettato e sviluppato un'app UI in React e Directus, che
-							consentiva la scansione della patente per l'estrazione e il
-							trattamento dei dati.
-						</li>
-					</ul>
-					<h2 className="mt-5">Valori e Filosofia di Lavoro</h2>
-					<p>
-						Sono una persona che crede nel potere del lavoro di squadra e della
-						comunicazione. Mi piace affrontare le sfide con un approccio
-						analitico e creativo, trovando soluzioni che non solo risolvano il
-						problema, ma migliorino l'esperienza utente.
-					</p>
-					<p>
-						<strong>I miei valori principali:</strong>
-					</p>
-					<ul>
-						<li>
-							<strong>Crescita continua:</strong> Ogni giorno è un'opportunità
-							per imparare.
-						</li>
-						<li>
-							<strong>Problem-solving:</strong> Affronto i problemi con
-							determinazione e creatività.
-						</li>
-						<li>
-							<strong>Impatto positivo:</strong> Voglio costruire soluzioni che
-							abbiano un valore reale per gli utenti.
-						</li>
-					</ul>
-					<h2 className="mt-5">Interessi Extra</h2>
-					<p>
-						Al di fuori del lavoro, mi piace allenarmi con manubri ed elastici
-						per raggiungere i miei obiettivi di fitness. Sono affascinato dalla
-						fantascienza e dal mondo dell'AI, e sogno un giorno di costruire una
-						soluzione simile a Jarvis di Iron Man.
-					</p>
-					<p className="mt-4 fs-2">
-						<strong>Ti va di lavorare insieme?</strong> Sentiti libero di
-						contattarmi!
-					</p>
+				<div className={`${styles.aboutContent} row justify-content-center`}>
+					<div className="col-md-8">
+						<h1 className="text-center mb-4">About Me</h1>
+
+						{/* Introduzione Personale */}
+						<div className="mb-5">
+							<h2 className="h4">Introduzione Personale</h2>
+							<p>
+								Sono <strong>Jomar Navarro</strong>, un{" "}
+								<strong>Full Stack Web Developer</strong> con una passione
+								inarrestabile per la tecnologia e l'innovazione. Mi entusiasma
+								trasformare idee in soluzioni digitali scalabili, combinando
+								competenze di frontend e backend per creare esperienze utente
+								intuitive ed efficienti.
+							</p>
+						</div>
+
+						{/* Percorso Formativo e Lavorativo */}
+						<div className="mb-5">
+							<h2 className="h4">Percorso Formativo e Lavorativo</h2>
+							<ul className="list-unstyled">
+								<li>
+									<strong>Diploma:</strong> Meccanica e Meccatronica, I.I.S A.
+									Avogadro.
+								</li>
+								<li>
+									<strong>Master Full Stack Web Development:</strong> Boolean
+									(700 ore, live e pratiche).
+								</li>
+								<li>
+									<strong>Esperienze:</strong>
+									<ul>
+										<li>
+											Jr. Full Stack Developer Trainee: Sviluppo di un'app per
+											la ricerca di film e serie TV ispirata a Netflix.
+										</li>
+										<li>
+											Sviluppatore per piattaforma di food delivery:
+											Implementazione sistemi di pagamento e gestione ordini con
+											Laravel.
+										</li>
+										<li>
+											Collaudatore nel settore manifatturiero: Controllo qualità
+											e verifica tolleranze.
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+
+						{/* Competenze Principali */}
+						<div className="mb-5">
+							<h2 className="h4">Competenze Principali</h2>
+							<ul className="list-inline">
+								<li className="list-inline-item">HTML</li>
+								<li className="list-inline-item">CSS</li>
+								<li className="list-inline-item">SASS</li>
+								<li className="list-inline-item">JavaScript</li>
+								<li className="list-inline-item">Vue.js</li>
+								<li className="list-inline-item">React</li>
+								<li className="list-inline-item">PHP</li>
+								<li className="list-inline-item">Laravel</li>
+								<li className="list-inline-item">MySQL</li>
+								<li className="list-inline-item">Bootstrap</li>
+								<li className="list-inline-item">Tailwind</li>
+							</ul>
+						</div>
+
+						{/* Obiettivi e Aspirazioni */}
+						<div className="mb-5">
+							<h2 className="h4">Obiettivi e Aspirazioni</h2>
+							<p>
+								Il mio obiettivo è continuare a crescere professionalmente,
+								perfezionando le mie competenze su framework come{" "}
+								<strong>React</strong> e <strong>Angular</strong> e sviluppando
+								progetti innovativi. Il sogno? Creare un'AI come Jarvis di Iron
+								Man, che possa semplificare la vita quotidiana.
+							</p>
+						</div>
+
+						{/* Progetti e Successi */}
+						<div className="mb-5">
+							<h2 className="h4">Progetti e Successi</h2>
+							<ul className="list-unstyled">
+								<li>
+									<strong>Hackathon 2024:</strong> Progettato e sviluppato una
+									UI per un totem utilizzando React e Directus.
+								</li>
+								<li>
+									<strong>Food Delivery App:</strong> Sviluppata con Laravel,
+									includendo sistemi di pagamento sicuri e gestione ordini
+									scalabile.
+								</li>
+							</ul>
+						</div>
+
+						{/* Hobby e Interessi */}
+						<div className="mb-5">
+							<h2 className="h4">Hobby e Interessi</h2>
+							<p>
+								Oltre al coding, mi dedico a migliorare la mia forma fisica, con
+								l'obiettivo di dimagrire e costruire muscoli. Mi appassiona
+								esplorare nuove tecnologie e trovare soluzioni creative per
+								problemi complessi.
+							</p>
+						</div>
+
+						{/* Chiamata all'Azione */}
+						<div className="text-center">
+							<h2 className="h4">Contattami</h2>
+							<p>
+								Se desideri collaborare o conoscere meglio il mio lavoro, visita
+								il mio{" "}
+								<a
+									href="http://www.linkedin.com/in/jomar-navarro"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									LinkedIn
+								</a>{" "}
+								o il mio{" "}
+								<a
+									href="https://github.com/Jomar-Navarro"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									GitHub
+								</a>
+								.
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</>
