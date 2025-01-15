@@ -41,10 +41,9 @@ export default function Footer() {
 							<div className="col-md-3">
 								<h3>RoadMap</h3>
 								<ul className="list-unstyled d-flex flex-column">
-									<NavLink>Home</NavLink>
-									<NavLink>About</NavLink>
-									<NavLink>Projects</NavLink>
-									<NavLink>Contact</NavLink>
+									<NavLink to="/">Home</NavLink>
+									<NavLink to="/about">About</NavLink>
+									<NavLink to="/projects">Projects</NavLink>
 								</ul>
 							</div>
 						</div>
