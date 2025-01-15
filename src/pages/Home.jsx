@@ -20,10 +20,6 @@ export default function Home() {
 					<BestProjects />
 				</section>
 			</main>
-
-			<footer>
-				<Footer />
-			</footer>
 		</>
 	);
 }
