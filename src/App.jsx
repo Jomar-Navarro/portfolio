@@ -7,7 +7,6 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import RootLayout from "./pages/Root";
 import Loader from "./assets/components/Loader";
-import Footer from "./assets/components/Footer";
 
 import "./App.scss";
 

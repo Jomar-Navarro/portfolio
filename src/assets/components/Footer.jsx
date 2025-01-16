@@ -6,7 +6,7 @@ export default function Footer() {
 	return (
 		<>
 			<div className={`container py-5`}>
-				<div className="row  justify-content-center text-white">
+				<div className="row justify-content-center text-white">
 					<div className="col-md-6">
 						<h3>Jomar Navarro</h3>
 						<ul className="list-unstyled d-flex align-items-center justify-content-start fs-1">
@@ -32,9 +32,7 @@ export default function Footer() {
 					<div className="col-md-3">
 						<h3>Contatti</h3>
 						<ul className="list-unstyled">
-							<li>Indirizzo</li>
-							<li>Telefono</li>
-							<li>Email</li>
+							<li>Jomarnavarro201@gmail.com</li>
 						</ul>
 					</div>
 
