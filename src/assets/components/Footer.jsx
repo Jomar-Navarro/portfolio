@@ -8,8 +8,8 @@ export default function Footer() {
 			<section className={styles.footer}>
 				<div className={`${styles.wrap} container py-5`}>
 					<div className="row justify-content-center text-white ">
-						<div className="col-md-6">
-							<h3 className="text-start">Jomar Navarro</h3>
+						<div className="col-md-6 text-start">
+							<h3>Jomar Navarro</h3>
 							<ul className="list-unstyled d-flex align-items-center justify-content-start fs-1">
 								<li>
 									<a href="#">
