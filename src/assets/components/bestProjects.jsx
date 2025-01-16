@@ -33,13 +33,15 @@ export default function BestProjects() {
 	);
 
 	return (
-		<div className="container my-5">
-			<h1 className={styles.title}>Benvenuti ai miei progetti migliori!</h1>
-			<div className={styles.wrapper}>
-				{bestProjects.map((project, index) => (
-					<Card key={index} project={project} url={project.url} />
-				))}
+		<>
+			<div className="container my-5">
+				<h1 className={styles.title}>Benvenuti ai miei progetti migliori!</h1>
+				<div className={styles.wrapper}>
+					{bestProjects.map((project, index) => (
+						<Card key={index} project={project} url={project.url} />
+					))}
+				</div>
 			</div>
-		</div>
+		</>
 	);
 }
