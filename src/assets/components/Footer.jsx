@@ -27,7 +27,7 @@ export default function Footer() {
 									</a>
 								</li>
 							</ul>
-							<p>© 2025 Jomar Navarro. All rights reserved</p>
+							<p className="fs-6">© 2025 Jomar Navarro. All rights reserved</p>
 						</div>
 
 						<div
