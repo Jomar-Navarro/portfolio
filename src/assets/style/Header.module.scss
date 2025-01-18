@@ -6,16 +6,19 @@
 	transform: translateX(-50%);
 	z-index: 1000; /* Assicurati che l'header sia sopra altri elementi */
 	padding: 10px 20px;
+	margin-top: 40px;
 	transition: all 0.3s ease; /* Aggiungi una transizione per un effetto più fluido */
 
 	&.scrolled {
 		left: 0;
+		margin: 0;
 		transform: none;
 		width: 100%;
 		border-radius: 0;
 		padding: 10px 0; /* Regola il padding se necessario */
 	}
 }
+
 nav {
 	border: solid #060730;
 	background: rgb(2, 1, 16);

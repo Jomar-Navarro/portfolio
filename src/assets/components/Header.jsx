@@ -26,7 +26,7 @@ export default function Header() {
 				<nav
 					className={`${styles.nav} ${
 						scrolled ? styles.scrolled : ""
-					} d-flex justify-content-between align-items-center px-4 py-3 border-2 ${
+					} d-flex justify-content-between align-items-center border-2 ${
 						scrolled ? "" : "rounded-4"
 					}`}
 				>
