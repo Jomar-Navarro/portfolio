@@ -1,11 +1,35 @@
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import styles from "../style/Header.module.scss"; // Modifica l'importazione
 
 export default function Header() {
+	const [scrolled, setScrolled] = useState(false);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			if (window.scrollY > 50) {
+				setScrolled(true);
+			} else {
+				setScrolled(false);
+			}
+		};
+
+		window.addEventListener("scroll", handleScroll);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
 	return (
 		<header>
 			<div className="container d-flex justify-content-center my-4">
-				<nav className="d-flex justify-content-between align-items-center w-100 px-4 py-3 rounded-4 border-2">
+				<nav
+					className={`${styles.nav} ${
+						scrolled ? styles.scrolled : ""
+					} d-flex justify-content-between align-items-center px-4 py-3 border-2 ${
+						scrolled ? "" : "rounded-4"
+					}`}
+				>
 					<h3 className="text-white">Jomar Navarro</h3>
 					<div>
 						<ul className="nav">
