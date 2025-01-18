@@ -41,8 +41,8 @@ export default function ProjectsPage() {
 	return (
 		<>
 			<div className="container text-center text-white mt-5">
-				<h1>Welcome to My Projects</h1>
-				<p>Here's all the projects that I've worked on.</p>
+				<h1>Benvenuti ai miei Progetti</h1>
+				<p>Qui trovate tutti i progetti su cui ho lavorato.</p>
 
 				<div className="row justify-content-center">
 					{currentProjects.map((project, index) => (
