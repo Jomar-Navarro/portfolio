@@ -2,7 +2,7 @@
 	position: fixed;
 	top: 0;
 	left: 50%;
-	width: 50%;
+	width: 70%;
 	transform: translateX(-50%);
 	z-index: 1000; /* Assicurati che l'header sia sopra altri elementi */
 	padding: 10px 20px;
@@ -15,7 +15,7 @@
 		transform: none;
 		width: 100%;
 		border-radius: 0;
-		padding: 10px 0; /* Regola il padding se necessario */
+		padding: 10px 10%; /* Regola il padding se necessario */
 	}
 }
 
