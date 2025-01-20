@@ -1,5 +1,5 @@
 .image {
-	width: 55%;
+	width: 45%;
 	img {
 		border-radius: 10px;
 		display: block; /* Rimuove spazi indesiderati */
@@ -11,25 +11,16 @@
 }
 
 .title {
-	width: 45%;
-	margin: 50px;
-	padding: 20px;
-	text-align: left;
+	width: 55%;
 	.mainTitle {
-		display: inline;
-		font-size: 3rem;
+		text-align: left;
+		font-size: 3.7rem;
 		font-weight: 900;
 		font-family: "Insonsolata", monospace;
-		line-height: 2.5rem;
+		line-height: 4rem;
 		word-wrap: break-word; /* Per compatibilità con vecchi browser */
 		overflow-wrap: break-word; /* Metodo moderno per forzare il ritorno a capo */
 		word-break: keep-all; /* Impedisce la divisione delle parole */
-	}
-
-	h1 {
-		font-size: 3.6rem;
-		font-weight: 900;
-		font-family: "Inconsolata", monospace;
 	}
 	.subtitle {
 		font-family: "Inconsolata", monospace;
@@ -41,26 +32,31 @@
 	}
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1024px) {
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
 	.image {
-		width: 50%; /* Adatta la larghezza */
+		width: 100%; /* L'immagine occupa più spazio su schermi piccoli */
 	}
 
 	.title {
-		width: 50%; /* Adatta la larghezza */
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+		width: 100%; /* Occupare tutto lo spazio disponibile */
+		text-align: center;
 		.mainTitle {
-			font-size: 2.5rem;
-			line-height: 3rem;
+			font-size: 3.5rem;
+			line-height: 4rem;
 			word-wrap: break-word; /* Per compatibilità con vecchi browser */
 			overflow-wrap: break-word; /* Metodo moderno per forzare il ritorno a capo */
+			word-break: keep-all; /* Impedisce la divisione delle parole */
 		}
 
 		.subtitle {
-			font-size: 1.1rem;
+			margin-top: 10px;
+			font-size: 0.9rem;
+			line-height: 1.4rem;
 		}
 	}
 }
@@ -98,19 +94,16 @@
 
 /* Breakpoint per schermi extra piccoli */
 @media (max-width: 480px) {
-	.wrapper {
-		display: flex;
-		flex-direction: column;
-	}
-
 	.image {
 		width: 100%; /* L'immagine occupa quasi tutto lo schermo */
 	}
 
 	.title {
 		width: 100%; /* Occupare tutto lo spazio disponibile */
+		text-align: center;
 		.mainTitle {
-			font-size: 1.5rem;
+			font-size: 2.31rem;
+			text-align: center !important;
 			word-wrap: break-word; /* Per compatibilità con vecchi browser */
 			overflow-wrap: break-word; /* Metodo moderno per forzare il ritorno a capo */
 			word-break: keep-all; /* Impedisce la divisione delle parole */

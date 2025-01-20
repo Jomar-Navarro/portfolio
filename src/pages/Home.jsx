@@ -6,19 +6,17 @@ import BestProjects from "../assets/components/bestProjects";
 export default function Home() {
 	return (
 		<>
-			<main>
-				<section className="hero">
-					<Hero />
-				</section>
+			<section className="hero">
+				<Hero />
+			</section>
 
-				<section>
-					<About />
-				</section>
+			<section>
+				<About />
+			</section>
 
-				<section>
-					<BestProjects />
-				</section>
-			</main>
+			<section>
+				<BestProjects />
+			</section>
 		</>
 	);
 }

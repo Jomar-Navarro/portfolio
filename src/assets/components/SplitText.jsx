@@ -10,7 +10,6 @@ const SplitText = ({
 	easing = "easeOutCubic",
 	threshold = 0.1,
 	rootMargin = "-100px",
-	textAlign = "center",
 	onLetterAnimationComplete,
 }) => {
 	const letters = text.split("");
@@ -58,8 +57,8 @@ const SplitText = ({
 	return (
 		<p
 			ref={ref}
-			className={`split-parent ${className}`}
-			style={{ textAlign, overflow: "hidden" }}
+			className={`SplitText ${className}`}
+			style={{ overflow: "hidden" }}
 		>
 			{springs.map((props, index) => (
 				<animated.span
