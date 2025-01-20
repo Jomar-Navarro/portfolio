@@ -6,41 +6,35 @@
 	transform: translateX(-50%);
 	z-index: 1000; /* Assicurati che l'header sia sopra altri elementi */
 	padding: 10px 20px;
-	margin-top: 40px;
-	transition: all 0.3s ease; /* Aggiungi una transizione per un effetto più fluido */
+	margin-top: 2.5rem;
+	transition: all 0.3s ease;
 
 	&.scrolled {
 		left: 0;
 		margin: 0;
 		transform: none;
 		width: 100%;
-		height: 90px;
+		height: 90px; /* Altezza in pixel per precisione */
 		border-radius: 0;
-		padding: 10px 10%; /* Regola il padding se necessario */
+		padding: 10px 30px; /* Padding relativo per flessibilità */
 	}
 }
 
 nav {
-	border: solid #060730;
-	background: rgb(2, 1, 16);
-	background: linear-gradient(
-		148deg,
-		rgba(2, 1, 16, 1) 30%,
-		rgba(85, 10, 101, 1) 70%,
-		rgba(100, 12, 116, 1) 77%,
-		rgba(137, 16, 155, 1) 95%
-	);
+	border: solid 2px #060730;
 	background: linear-gradient(160deg, rgb(1, 0, 23) 40%, #89109b 100%);
 	background-repeat: no-repeat;
-	transition: all 0.3s ease; /* Aggiungi una transizione per un effetto più fluido */
+	transition: all 0.3s ease;
 	border-radius: 20px; /* Angoli arrotondati */
+
 	&.scrolled {
 		border-radius: 0; /* Rimuovi gli angoli arrotondati */
 	}
+
 	.title {
 		font-family: "Inconsolata", monospace;
 		color: #fff;
-		font-size: 3rem;
+		font-size: 2.5rem; /* Dimensione titolo relativa per scalabilità */
 		font-weight: 900;
 		margin: 0;
 		padding: 0;
@@ -48,9 +42,9 @@ nav {
 }
 
 .nav-link {
-	font-family: "inconsolata", monospace;
+	font-family: "Inconsolata", monospace;
 	text-decoration: none;
-	padding: 0px 15px;
+	padding: 0 15px;
 	position: relative;
 	color: #fff;
 	font-size: 1.4rem;
@@ -61,19 +55,19 @@ nav {
 	color: #060730;
 	font-weight: bold;
 	text-decoration: none;
-	padding-bottom: 35px;
-}
+	padding-bottom: 30px;
 
-.isActive::after {
-	content: "";
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 100%;
-	height: 4px;
-	background-color: #0f1052;
-	border-radius: 10px;
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100%;
+		height: 4px;
+		background-color: #0f1052;
+		border-radius: 10px;
+	}
 }
 
 .hamburger {
@@ -85,7 +79,7 @@ nav {
 	}
 
 	svg {
-		height: 2em;
+		height: 2em; /* Altezza relativa per scalabilità */
 		width: 2em;
 		transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
 	}
@@ -94,7 +88,7 @@ nav {
 		fill: none;
 		stroke: white;
 		stroke-linecap: round;
-		stroke-width: 3;
+		stroke-width: 3px; /* Precisione per linee */
 		transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
 			stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
 	}
@@ -113,30 +107,22 @@ nav {
 	}
 }
 
+/* Media Queries */
 @media (max-width: 768px) {
 	nav {
-		bottom: 1;
-		height: 80px;
+		height: 80px; /* Altezza in pixel per coerenza su schermi piccoli */
 		.title {
-			font-family: "Inconsolata", monospace;
-			color: #fff;
 			font-size: 1.2rem;
-			font-weight: 900;
-			margin: 0;
-			padding: 0;
 		}
 	}
 
 	.nav-link {
 		font-size: 1rem;
-		font-weight: 900;
 	}
 
 	.isActive {
-		color: #89109b;
-		font-weight: bold;
-		text-decoration: none;
 		padding-bottom: 0;
+		color: #89109b;
 
 		&::after {
 			content: none;
@@ -144,26 +130,59 @@ nav {
 	}
 
 	.navLinks {
-		display: flex; /* Cambiato da `none` a `flex` per supportare transizioni */
+		display: flex;
 		align-items: center;
 		justify-content: center;
 		width: 100%;
-		height: 0; /* Altezza iniziale a 0 per animare l'apertura */
-		overflow: hidden; /* Nascondi contenuto quando è chiuso */
+		height: 0;
+		overflow: hidden;
 		position: absolute;
-		top: 100%; /* Posizionato sotto il nav */
+		top: 100%;
 		left: 0;
-		background: rgba(137, 16, 155, 0.25); /* Sfondo semi-trasparente */
+		background: rgba(137, 16, 155, 0.25);
 		transition: height 0.4s ease, opacity 0.4s ease;
 		border-radius: 20px;
 
 		&.active {
-			height: 100px; /* Altezza massima del menu (modifica in base alle tue necessità) */
+			height: 100px; /* Altezza in pixel */
 			opacity: 1;
 		}
 	}
 
 	.hamburger {
 		display: block;
+	}
+}
+
+@media (min-width: 800px) and (max-width: 1440px) {
+	.nav {
+		width: 90%;
+		margin-top: 10px;
+	}
+
+	nav {
+		.title {
+			font-size: 2rem; /* Dimensione titolo per schermi medi */
+		}
+	}
+
+	.nav-link {
+		font-size: 1.2rem;
+		padding: 0 20px;
+	}
+
+	.navLinks {
+		height: auto;
+		overflow: visible;
+	}
+
+	.isActive {
+		color: #060730;
+		font-weight: bold;
+		text-decoration: none;
+
+		&::after {
+			content: none;
+		}
 	}
 }
