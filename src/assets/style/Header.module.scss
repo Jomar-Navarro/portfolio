@@ -53,13 +53,15 @@ nav {
 	padding: 0px 15px;
 	position: relative;
 	color: #fff;
+	font-size: 1.4rem;
+	font-weight: 900;
 }
 
 .isActive {
 	color: #060730;
 	font-weight: bold;
 	text-decoration: none;
-	padding-bottom: 30px;
+	padding-bottom: 35px;
 }
 
 .isActive::after {
@@ -70,7 +72,7 @@ nav {
 	transform: translateX(-50%);
 	width: 100%;
 	height: 4px;
-	background-color: #060730;
+	background-color: #0f1052;
 	border-radius: 10px;
 }
 
