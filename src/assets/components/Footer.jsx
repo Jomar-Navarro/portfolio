@@ -13,17 +13,17 @@ export default function Footer() {
 							<ul className="list-unstyled d-flex align-items-center justify-content-start fs-1">
 								<li>
 									<a className={styles.icon} href="#">
-										<i class="fa-brands fa-linkedin"></i>
+										<i className="fa-brands fa-linkedin"></i>
 									</a>
 								</li>
 								<li className="mx-4">
 									<a className={styles.icon} href="#">
-										<i class="fa-brands fa-square-github"></i>
+										<i className="fa-brands fa-square-github"></i>
 									</a>
 								</li>
 								<li>
 									<a className={styles.icon} href="#">
-										<i class="fa-solid fa-download"></i>
+										<i className="fa-solid fa-download"></i>
 									</a>
 								</li>
 							</ul>

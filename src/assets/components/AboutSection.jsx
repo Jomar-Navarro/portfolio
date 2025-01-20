@@ -9,17 +9,17 @@ export default function AboutPage() {
 			<div className="d-flex justify-content-center align-items-center mx-5 my-5">
 				<div className={styles.description}>
 					<div className="d-flex flex-column h-100 text-white pe-5 mx-5 text-end">
-						<p>
+						<p className="p-0 m-0">
 							Ciao! Sono Jomar, uno sviluppatore web full-stack appassionato di
 							tecnologia e gadget elettronici con esperienza in diversi
 							linguaggi tecnologici. Mi definiscono la mia curiosità e la mia
 							competitività. Cerco costantemente nuove sfide per crescere
 							professionalmente e contribuire a progetti innovativi.
-							<p>
-								<NavLink to="/about" className="text-white text-end">
-									Scopri di più su di me...
-								</NavLink>
-							</p>
+						</p>
+						<p className="p-0 m-0">
+							<NavLink to="/about" className="text-white text-end">
+								Scopri di più su di me...
+							</NavLink>
 						</p>
 
 						<div className="pt-4 d-flex flex-column align-items-end">
