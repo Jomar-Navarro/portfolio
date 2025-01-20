@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Roboto+Slab:wght@100..900&display=swap");
-
 .image {
 	width: 55%;
 	img {
@@ -18,10 +16,14 @@
 	padding: 20px;
 	text-align: left;
 	.mainTitle {
+		display: inline;
 		font-size: 3rem;
 		font-weight: 900;
 		font-family: "Insonsolata", monospace;
-		line-height: 3rem;
+		line-height: 2.5rem;
+		word-wrap: break-word; /* Per compatibilità con vecchi browser */
+		overflow-wrap: break-word; /* Metodo moderno per forzare il ritorno a capo */
+		word-break: keep-all; /* Impedisce la divisione delle parole */
 	}
 
 	h1 {
@@ -36,5 +38,87 @@
 		border-left: 2px solid #a41fb9;
 		padding-left: 20px;
 		font-size: 1.2rem;
+	}
+}
+
+@media (max-width: 1440px) {
+	.image {
+		width: 50%; /* Adatta la larghezza */
+	}
+
+	.title {
+		width: 50%; /* Adatta la larghezza */
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		.mainTitle {
+			font-size: 2.5rem;
+			line-height: 3rem;
+			word-wrap: break-word; /* Per compatibilità con vecchi browser */
+			overflow-wrap: break-word; /* Metodo moderno per forzare il ritorno a capo */
+		}
+
+		.subtitle {
+			font-size: 1.1rem;
+		}
+	}
+}
+
+/* Breakpoint per schermi piccoli */
+@media (max-width: 768px) {
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+		margin-top: 150px;
+	}
+
+	.image {
+		width: 100%; /* L'immagine occupa più spazio su schermi piccoli */
+	}
+
+	.title {
+		width: 100%; /* Occupare tutto lo spazio disponibile */
+		padding: 10px;
+		.mainTitle {
+			font-size: 3rem;
+			line-height: 2.2rem;
+			word-wrap: break-word; /* Per compatibilità con vecchi browser */
+			overflow-wrap: break-word; /* Metodo moderno per forzare il ritorno a capo */
+			word-break: keep-all; /* Impedisce la divisione delle parole */
+		}
+
+		.subtitle {
+			margin-top: 10px;
+			font-size: 0.9rem;
+			line-height: 1.4rem;
+		}
+	}
+}
+
+/* Breakpoint per schermi extra piccoli */
+@media (max-width: 480px) {
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.image {
+		width: 100%; /* L'immagine occupa quasi tutto lo schermo */
+	}
+
+	.title {
+		width: 100%; /* Occupare tutto lo spazio disponibile */
+		.mainTitle {
+			font-size: 1.5rem;
+			word-wrap: break-word; /* Per compatibilità con vecchi browser */
+			overflow-wrap: break-word; /* Metodo moderno per forzare il ritorno a capo */
+			word-break: keep-all; /* Impedisce la divisione delle parole */
+		}
+
+		.subtitle {
+			font-size: 0.8rem;
+			line-height: 1.2rem;
+		}
 	}
 }

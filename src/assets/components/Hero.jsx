@@ -8,7 +8,9 @@ export default function Hero() {
 		<>
 			<div className="vh-100 d-flex flex-column justify-content-center">
 				<div className="container">
-					<div className="d-flex justify-content-center text-center text-white">
+					<div
+						className={`${styles.wrapper} d-flex justify-content-center align-items-center text-center text-white`}
+					>
 						<div className={styles.title}>
 							<SplitText
 								text="Junior Full Stack Web Developer"

@@ -59,7 +59,7 @@ const SplitText = ({
 		<p
 			ref={ref}
 			className={`split-parent ${className}`}
-			style={{ textAlign, display: "inline", overflow: "hidden" }}
+			style={{ textAlign, overflow: "hidden" }}
 		>
 			{springs.map((props, index) => (
 				<animated.span
