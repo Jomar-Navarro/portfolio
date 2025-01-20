@@ -22,6 +22,14 @@ export default function AboutPage() {
 							Ti va di lavorare insieme?
 						</span>
 					</p>
+
+					<a
+						href="public\CV\JOMAR_NAVARRO_CV_IT.pdf"
+						download="Jomar_Navarro_CV.pdf"
+						className="btn btn-primary"
+					>
+						Scarica il mio CV
+					</a>
 				</div>
 
 				<div className={styles.image}>
