@@ -26,7 +26,7 @@ export default function AboutPage() {
 							<span className="text-start w-100 fs-3 text-end fw-bolder">
 								Ti va di lavorare insieme?
 							</span>
-							<div className="d-flex align-items-center justify-content-center">
+							<div className={styles.download}>
 								<p className="pe-3">Scarica il mio CV</p>
 								<Button
 									href="public\CV\JOMAR_NAVARRO_CV_IT.pdf"
