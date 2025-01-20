@@ -1,13 +1,14 @@
 import { NavLink } from "react-router-dom";
 
 import styles from "../style/AboutSection.module.scss";
+import Button from "./Button";
 
 export default function AboutPage() {
 	return (
 		<>
 			<div className="d-flex justify-content-center align-items-center mx-5 my-5">
 				<div className={styles.description}>
-					<p className="d-flex flex-column justify-content-center h-100 text-white pe-5 mx-5 text-end">
+					<p className="d-flex flex-column h-100 text-white pe-5 mx-5 text-end">
 						Ciao! Sono Jomar, uno sviluppatore web full-stack appassionato di
 						tecnologia e gadget elettronici con esperienza in diversi linguaggi
 						tecnologici. Mi definiscono la mia curiosità e la mia competitività.
@@ -22,14 +23,13 @@ export default function AboutPage() {
 							Ti va di lavorare insieme?
 						</span>
 					</p>
-
-					<a
+					<Button
 						href="public\CV\JOMAR_NAVARRO_CV_IT.pdf"
 						download="Jomar_Navarro_CV.pdf"
-						className="btn btn-primary"
+						className=""
 					>
 						Scarica il mio CV
-					</a>
+					</Button>
 				</div>
 
 				<div className={styles.image}>
