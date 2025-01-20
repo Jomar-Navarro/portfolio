@@ -4,6 +4,7 @@ import styles from "../style/Header.module.scss"; // Modifica l'importazione
 
 export default function Header() {
 	const [scrolled, setScrolled] = useState(false);
+	const [menuOpen, setMenuOpen] = useState(false);
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -20,6 +21,10 @@ export default function Header() {
 			window.removeEventListener("scroll", handleScroll);
 		};
 	}, []);
+
+	const toggleMenu = () => {
+		setMenuOpen(!menuOpen);
+	};
 	return (
 		<header>
 			<div className="container d-flex justify-content-center my-4">
