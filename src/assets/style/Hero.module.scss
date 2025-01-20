@@ -44,8 +44,8 @@
 
 	.title {
 		width: 100%; /* Occupare tutto lo spazio disponibile */
-		text-align: center;
 		.mainTitle {
+			text-align: center;
 			font-size: 3.5rem;
 			line-height: 4rem;
 			word-wrap: break-word; /* Per compatibilità con vecchi browser */
@@ -55,7 +55,8 @@
 
 		.subtitle {
 			margin-top: 10px;
-			font-size: 0.9rem;
+			font-size: 1.4rem;
+			margin: 20px 0;
 			line-height: 1.4rem;
 		}
 	}
@@ -86,7 +87,7 @@
 
 		.subtitle {
 			margin-top: 10px;
-			font-size: 0.9rem;
+			font-size: 1.2rem;
 			line-height: 1.4rem;
 		}
 	}
@@ -110,7 +111,8 @@
 		}
 
 		.subtitle {
-			font-size: 0.8rem;
+			font-size: 1rem;
+			margin: 20px 0;
 			line-height: 1.2rem;
 		}
 	}
