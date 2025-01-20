@@ -8,28 +8,33 @@ export default function AboutPage() {
 		<>
 			<div className="d-flex justify-content-center align-items-center mx-5 my-5">
 				<div className={styles.description}>
-					<p className="d-flex flex-column h-100 text-white pe-5 mx-5 text-end">
-						Ciao! Sono Jomar, uno sviluppatore web full-stack appassionato di
-						tecnologia e gadget elettronici con esperienza in diversi linguaggi
-						tecnologici. Mi definiscono la mia curiosità e la mia competitività.
-						Cerco costantemente nuove sfide per crescere professionalmente e
-						contribuire a progetti innovativi.
-						<span>
-							<NavLink to="/about" className="text-white text-end">
-								Scopri di più su di me...
-							</NavLink>
-						</span>
-						<span className="pt-5 text-start w-100 fs-3 text-end fw-bolder">
-							Ti va di lavorare insieme?
-						</span>
-					</p>
-					<Button
-						href="public\CV\JOMAR_NAVARRO_CV_IT.pdf"
-						download="Jomar_Navarro_CV.pdf"
-						className=""
-					>
-						Scarica il mio CV
-					</Button>
+					<div className="d-flex flex-column h-100 text-white pe-5 mx-5 text-end">
+						<p>
+							Ciao! Sono Jomar, uno sviluppatore web full-stack appassionato di
+							tecnologia e gadget elettronici con esperienza in diversi
+							linguaggi tecnologici. Mi definiscono la mia curiosità e la mia
+							competitività. Cerco costantemente nuove sfide per crescere
+							professionalmente e contribuire a progetti innovativi.
+							<p>
+								<NavLink to="/about" className="text-white text-end">
+									Scopri di più su di me...
+								</NavLink>
+							</p>
+						</p>
+
+						<div className="pt-4 d-flex flex-column align-items-end">
+							<span className="text-start w-100 fs-3 text-end fw-bolder">
+								Ti va di lavorare insieme?
+							</span>
+							<div className="d-flex align-items-center justify-content-center">
+								<p className="pe-3">Scarica il mio CV</p>
+								<Button
+									href="public\CV\JOMAR_NAVARRO_CV_IT.pdf"
+									download="Jomar_Navarro_CV.pdf"
+								/>
+							</div>
+						</div>
+					</div>
 				</div>
 
 				<div className={styles.image}>

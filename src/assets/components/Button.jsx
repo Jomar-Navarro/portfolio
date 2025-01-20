@@ -1,6 +1,7 @@
+import { Children } from "react";
 import styles from "../style/Button.module.scss";
 
-export default function Button({ href, download, onClick }) {
+export default function Button({ href, download, onClick, Children }) {
 	return (
 		<>
 			<a
@@ -9,6 +10,7 @@ export default function Button({ href, download, onClick }) {
 				className={styles.Btn}
 				onClick={onClick}
 			>
+				{Children}
 				<svg
 					className={styles.svgIcon}
 					viewBox="0 0 384 512"
