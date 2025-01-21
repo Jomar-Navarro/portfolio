@@ -21,30 +21,39 @@
 	}
 }
 
-@media (max-width: 1024px) and (orientation: landscape) {
+@media (max-width: 1024px) {
+	.mySwiper {
+		margin: 5rem 0 2rem 0;
+	}
+	.logo {
+		img {
+			width: 130px;
+			height: auto;
+		}
+	}
 }
 
-/* Breakpoint per schermi piccoli */
 @media (max-width: 768px) {
+	.mySwiper {
+		margin: 5rem 0 13rem 0;
+	}
+	.logo {
+		img {
+			width: 100px;
+			height: auto;
+		}
+	}
 }
 
-/* Breakpoint per schermi extra piccoli */
 @media (max-width: 480px) {
-	.swiper {
-		width: 100%;
-		height: auto;
-		border-top: 1px solid rebeccapurple;
-		border-bottom: 1px solid rebeccapurple;
+	.mySwiper {
+		margin: 5rem 0 15rem 0;
 	}
 
 	.logo {
-		display: flex;
-		justify-content: center;
-		align-items: center;
 		img {
-			object-fit: cover;
-			width: 4rem;
-			height: 4rem;
+			width: 80px;
+			height: auto;
 		}
 	}
 }
