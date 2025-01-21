@@ -1,5 +1,6 @@
 import Swiper from "./Swiper";
 import SplitText from "./SplitText";
+import selfImage from "../img/self.png";
 
 import styles from "../style/Hero.module.scss";
 
@@ -7,7 +8,7 @@ export default function Hero() {
 	return (
 		<>
 			<div className="vh-100 d-flex flex-column justify-content-center">
-				<div className="container">
+				<div className={`${styles.Hero}  container`}>
 					<div
 						className={`${styles.wrapper} d-flex justify-content-center align-items-center text-center text-white`}
 					>
@@ -33,7 +34,7 @@ export default function Hero() {
 						</div>
 
 						<div className={styles.image}>
-							<img src="src/assets/img/self.PNG" alt="myself" />
+							<img src={selfImage} alt="myself" />
 						</div>
 					</div>
 				</div>

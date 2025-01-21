@@ -1,7 +1,9 @@
 .image {
-	width: 45%;
+	width: 50% !important;
 	img {
 		border-radius: 10px;
+		height: auto; // Mantiene le proporzioni
+		object-fit: cover; // Adatta l'immagine al contenitore
 		display: block; /* Rimuove spazi indesiderati */
 		width: 100%;
 		height: auto; /* Mantiene le proporzioni */
@@ -11,20 +13,23 @@
 }
 
 .title {
-	width: 55%;
+	width: 45%;
 	.mainTitle {
 		text-align: center;
-		font-size: 4.3rem;
+		font-size: 4rem;
 		font-weight: 900;
 		font-family: "Insonsolata", monospace;
 		line-height: 4rem;
-		word-wrap: break-word; /* Per compatibilità con vecchi browser */
-		overflow-wrap: break-word; /* Metodo moderno per forzare il ritorno a capo */
-		word-break: keep-all; /* Impedisce la divisione delle parole */
+		font-size: clamp(
+			2rem,
+			5vw,
+			3.6rem
+		); // Responsivo per le dimensioni del testo
 	}
 	.subtitle {
 		font-family: "Inconsolata", monospace;
 		// font-family: Helvetica, sans-serif
+		text-align: start;
 		margin-top: 40px;
 		border-left: 2px solid #a41fb9;
 		padding-left: 20px;
@@ -32,7 +37,7 @@
 	}
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (orientation: landscape) {
 	.wrapper {
 		display: flex;
 		flex-direction: column;
@@ -48,9 +53,6 @@
 			text-align: center;
 			font-size: 3.5rem;
 			line-height: 4rem;
-			word-wrap: break-word; /* Per compatibilità con vecchi browser */
-			overflow-wrap: break-word; /* Metodo moderno per forzare il ritorno a capo */
-			word-break: keep-all; /* Impedisce la divisione delle parole */
 		}
 
 		.subtitle {
@@ -67,11 +69,12 @@
 	.wrapper {
 		display: flex;
 		flex-direction: column;
-		margin-top: 150px;
 	}
 
 	.image {
 		width: 100%; /* L'immagine occupa più spazio su schermi piccoli */
+		height: auto; /* Mantiene le proporzioni */
+		object-fit: cover;
 	}
 
 	.title {
@@ -79,10 +82,7 @@
 		padding: 10px;
 		.mainTitle {
 			font-size: 3rem;
-			line-height: 2.2rem;
-			word-wrap: break-word; /* Per compatibilità con vecchi browser */
-			overflow-wrap: break-word; /* Metodo moderno per forzare il ritorno a capo */
-			word-break: keep-all; /* Impedisce la divisione delle parole */
+			line-height: 2.8rem;
 		}
 
 		.subtitle {
@@ -97,17 +97,16 @@
 @media (max-width: 480px) {
 	.image {
 		width: 100%; /* L'immagine occupa quasi tutto lo schermo */
+		height: auto; /* Mantiene le proporzioni */
+		object-fit: cover;
 	}
 
 	.title {
 		width: 100%; /* Occupare tutto lo spazio disponibile */
 		text-align: center;
 		.mainTitle {
-			font-size: 2.31rem;
+			font-size: 2.3rem;
 			text-align: center !important;
-			word-wrap: break-word; /* Per compatibilità con vecchi browser */
-			overflow-wrap: break-word; /* Metodo moderno per forzare il ritorno a capo */
-			word-break: keep-all; /* Impedisce la divisione delle parole */
 		}
 
 		.subtitle {

@@ -12,7 +12,7 @@ const SplitText = ({
 	rootMargin = "-100px",
 	onLetterAnimationComplete,
 }) => {
-	const letters = text.split("");
+	const words = text.split("  ");
 	const [inView, setInView] = useState(false);
 	const ref = useRef();
 	const animatedCount = useRef(0);
@@ -34,15 +34,15 @@ const SplitText = ({
 	}, [threshold, rootMargin]);
 
 	const springs = useSprings(
-		letters.length,
-		letters.map((_, i) => ({
+		words.length,
+		words.map((_, i) => ({
 			from: animationFrom,
 			to: inView
 				? async (next) => {
 						await next(animationTo);
 						animatedCount.current += 1;
 						if (
-							animatedCount.current === letters.length &&
+							animatedCount.current === words.length &&
 							onLetterAnimationComplete
 						) {
 							onLetterAnimationComplete();
@@ -58,7 +58,7 @@ const SplitText = ({
 		<p
 			ref={ref}
 			className={`SplitText ${className}`}
-			style={{ overflow: "hidden" }}
+			style={{ overflow: "hidden", whiteSpace: "normal" }}
 		>
 			{springs.map((props, index) => (
 				<animated.span
@@ -69,7 +69,7 @@ const SplitText = ({
 						willChange: "transform, opacity",
 					}}
 				>
-					{letters[index] === " " ? " " : letters[index]}
+					{words[index] === " " ? " " : words[index]}
 				</animated.span>
 			))}
 		</p>
