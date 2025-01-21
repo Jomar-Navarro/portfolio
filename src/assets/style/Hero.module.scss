@@ -1,5 +1,12 @@
+.mainHero {
+	height: 100vh;
+}
+
 .image {
 	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	img {
 		height: auto; // Mantiene le proporzioni
 		object-fit: cover; // Adatta l'immagine al contenitore
