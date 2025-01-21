@@ -6,8 +6,8 @@ import styles from "../style/Swiper.module.scss";
 
 import logos from "../../data/logos";
 
-export default function App() {
-	const settings = {
+export default function App({ sliderSettings = {} }) {
+	const defaultSettings = {
 		centerMode: true,
 		slidesToShow: 5,
 		autoplay: true,
@@ -18,7 +18,29 @@ export default function App() {
 		pauseOnHover: false,
 		arrows: false,
 		rtl: true,
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 3,
+				},
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+				},
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 2,
+				},
+			},
+		],
 	};
+
+	const settings = { ...defaultSettings, ...sliderSettings };
 
 	return (
 		<div className={styles.mySwiper}>

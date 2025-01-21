@@ -39,9 +39,7 @@ export default function Hero() {
 					</div>
 				</div>
 
-				<div className="my-5">
-					<Swiper />
-				</div>
+				<Swiper />
 			</div>
 		</>
 	);

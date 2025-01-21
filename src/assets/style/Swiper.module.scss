@@ -1,11 +1,10 @@
 .mySwiper {
-	margin-top: 10px;
-	margin-bottom: 100px;
+	margin: 5rem 0 13rem 0;
 }
 
 .swiper {
 	width: 100%;
-	height: 100%;
+	height: auto;
 	padding: 10px 0px;
 	border-top: 1px solid rebeccapurple;
 	border-bottom: 1px solid rebeccapurple;
@@ -19,5 +18,33 @@
 		object-fit: cover;
 		width: 130px;
 		height: 130px;
+	}
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+}
+
+/* Breakpoint per schermi piccoli */
+@media (max-width: 768px) {
+}
+
+/* Breakpoint per schermi extra piccoli */
+@media (max-width: 480px) {
+	.swiper {
+		width: 100%;
+		height: auto;
+		border-top: 1px solid rebeccapurple;
+		border-bottom: 1px solid rebeccapurple;
+	}
+
+	.logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img {
+			object-fit: cover;
+			width: 4rem;
+			height: 4rem;
+		}
 	}
 }
