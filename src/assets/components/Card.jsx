@@ -6,7 +6,7 @@ dayjs.locale("it"); // Imposta la localizzazione italiana
 
 export default function Card({ project, url }) {
 	return (
-		<div>
+		<div className="d-flex justify-content-center align-items-center">
 			<div className={`${styles.card}`}>
 				<a className={styles.link} href={url} target="_blank" rel="noreferrer">
 					<p className={styles.heading}>{project.title}</p>

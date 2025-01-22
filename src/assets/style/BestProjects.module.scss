@@ -1,11 +1,7 @@
 .wrapper {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(2, auto);
-	gap: 20px; /* Spazio tra le card */
+	display: flex;
 	justify-items: center;
-	align-items: start;
-	padding: 20px;
+	align-items: center;
 }
 
 .title {
@@ -18,12 +14,6 @@
 	letter-spacing: 10px;
 	text-transform: uppercase;
 	font-family: "Inconsolata", monospace;
-
-	display: grid;
-	grid-template-columns: 1fr max-content 1fr;
-	grid-template-rows: 27px 0;
-	grid-gap: 40px;
-	align-items: center;
 }
 
 .title:after,
@@ -32,4 +22,15 @@
 	border-bottom: 1px solid rgba(85, 10, 101, 1);
 	border-top: 1px solid rgba(85, 10, 101, 1);
 	height: 10px;
+}
+
+/* Breakpoint per schermi piccoli */
+@media (max-width: 1024px) and (orientation: landscape) {
+}
+
+@media (max-width: 768px) {
+}
+
+/* Breakpoint per schermi extra piccoli */
+@media (max-width: 480px) {
 }
