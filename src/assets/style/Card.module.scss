@@ -64,3 +64,27 @@
 .link {
 	text-decoration: none;
 }
+
+@media (max-width: 1024px) and (orientation: landscape) {
+	.card {
+		width: 18.125;
+		height: 22.125rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.card {
+		width: 18.125;
+		height: 22.125rem;
+	}
+}
+
+/* Breakpoint per schermi extra piccoli */
+@media (max-width: 480px) {
+	.card {
+		display: flex;
+		flex-wrap: wrap;
+		width: 18.125rem;
+		height: 22.125rem;
+	}
+}

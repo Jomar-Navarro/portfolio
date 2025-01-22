@@ -40,14 +40,21 @@ export default function ProjectsPage() {
 
 	return (
 		<>
-			<div className="container text-center text-white mt-5">
+			<div className="container d-flex justify-content-center align-items-center flex-column text-center text-white mt-5">
 				<h1>Benvenuti ai miei Progetti</h1>
 				<p>Qui trovate tutti i progetti su cui ho lavorato.</p>
 
-				<div className="row justify-content-center">
+				<div className="row d-flex justify-content-center align-items-center">
 					{currentProjects.map((project, index) => (
-						<div key={index} className="col-3 m-5">
-							<Card project={project} url={project.url}>
+						<div
+							key={index}
+							className="col-12 col-sm-6 col-md-4 col-lg-3 m-4 mx-md-5 d-flex justify-content-center align-items-center"
+						>
+							<Card
+								className="w-100 d-flex flex-wrap"
+								project={project}
+								url={project.url}
+							>
 								<h2>{project.title}</h2>
 								<p>{project.description}</p>
 								<span>{new Date(project.created_at).toLocaleDateString()}</span>
