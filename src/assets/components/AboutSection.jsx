@@ -7,7 +7,7 @@ export default function AboutPage() {
 	return (
 		<>
 			<div
-				className={`${styles.wrapper} d-flex justify-content-center align-items-center mx-5 my-5`}
+				className={`${styles.wrapper} d-flex justify-content-center align-items-center`}
 			>
 				<div className={styles.description}>
 					<div className="d-flex flex-column h-100 text-white">
