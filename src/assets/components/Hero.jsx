@@ -7,7 +7,7 @@ import styles from "../style/Hero.module.scss";
 export default function Hero() {
 	return (
 		<>
-			<div className={` vh-100 d-flex flex-column justify-content-center`}>
+			<div className={`vh-100 d-flex flex-column justify-content-center`}>
 				<div
 					className={`${styles.Hero} container container-md container-sm d-flex align-items-center`}
 				>
