@@ -23,7 +23,7 @@
 	flex-direction: column;
 	justify-content: center;
 	.mainTitle {
-		text-align: center;
+		text-align: start;
 		font-size: 4rem;
 		font-weight: 900;
 		font-family: "Insonsolata", monospace;
@@ -61,7 +61,6 @@
 		.mainTitle {
 			text-align: center;
 			font-size: 3.5rem;
-			line-height: 4rem;
 		}
 
 		.subtitle {
@@ -95,6 +94,7 @@
 		width: 100%; /* Occupare tutto lo spazio disponibile */
 		padding: 10px;
 		.mainTitle {
+			text-align: center;
 			font-size: 3rem;
 			line-height: 2.8rem;
 		}
