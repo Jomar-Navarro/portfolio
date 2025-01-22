@@ -6,9 +6,11 @@ import Button from "./Button";
 export default function AboutPage() {
 	return (
 		<>
-			<div className="d-flex justify-content-center align-items-center mx-5 my-5">
+			<div
+				className={`${styles.wrapper} d-flex justify-content-center align-items-center mx-5 my-5`}
+			>
 				<div className={styles.description}>
-					<div className="d-flex flex-column h-100 text-white pe-5 mx-5 text-end">
+					<div className="d-flex flex-column h-100 text-white">
 						<p className="p-0 m-0">
 							Ciao! Sono Jomar, uno sviluppatore web full-stack appassionato di
 							tecnologia e gadget elettronici con esperienza in diversi
