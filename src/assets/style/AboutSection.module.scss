@@ -109,4 +109,36 @@ p {
 
 /* Breakpoint per schermi extra piccoli */
 @media (max-width: 480px) {
+	.wrapper {
+		width: 100%;
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.image {
+		width: 100%;
+		h3 {
+			top: 1;
+			left: 50%;
+			font-size: 4.5rem;
+			line-height: 80%;
+		}
+		img {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			object-fit: contain;
+		}
+	}
+
+	.description {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
 }
