@@ -35,7 +35,7 @@ export default function BestProjects() {
 	return (
 		<>
 			<div className="d-flex justify-content-center align-items-center">
-				<div className="container my-5">
+				<div className="container-fluid my-5">
 					<h1 className={styles.title}>Benvenuti ai miei progetti migliori!</h1>
 					<div className={`${styles.wrapper} row justify-content-center`}>
 						{bestProjects.map((project, index) => (

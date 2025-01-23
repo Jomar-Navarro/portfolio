@@ -81,6 +81,13 @@
 
 /* Breakpoint per schermi extra piccoli */
 @media (max-width: 480px) {
+	.wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 1rem;
+	}
+
 	.card {
 		display: flex;
 		flex-wrap: wrap;
