@@ -6,7 +6,7 @@ import Button from "./Button";
 export default function AboutPage() {
 	return (
 		<>
-			<div className="container-fluid container d-flex justify-content-center align-items-center px-5">
+			<div className="container-fluid container-lg d-flex justify-content-center align-items-center px-5">
 				<div className={`${styles.wrapper}`}>
 					<div className={`${styles.description}`}>
 						<div className="d-flex flex-column h-100 text-white  justify-content-center">
