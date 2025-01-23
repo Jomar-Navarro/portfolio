@@ -30,7 +30,7 @@ export default function AboutPage() {
 								<div className={styles.download}>
 									<p className="pe-3">Scarica il mio CV</p>
 									<Button
-										href="public\CV\JOMAR_NAVARRO_CV_IT.pdf"
+										href="/CV/JOMAR_NAVARRO_CV_IT.pdf"
 										download="Jomar_Navarro_CV.pdf"
 									/>
 								</div>

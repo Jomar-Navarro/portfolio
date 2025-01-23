@@ -24,7 +24,7 @@ export default function Footer() {
 								<li>
 									<a
 										className={styles.icon}
-										href="public\CV\JOMAR_NAVARRO_CV_IT.pdf"
+										href="/CV/JOMAR_NAVARRO_CV_IT.pdf"
 										download="Jomar_Navarro_CV.pdf"
 									>
 										<i className="fa-solid fa-download"></i>
