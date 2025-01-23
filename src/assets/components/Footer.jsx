@@ -34,8 +34,10 @@ export default function Footer() {
 							className={`${styles.card} col-md-3 d-flex flex-column align-items-start mx-3`}
 						>
 							<h3>Contatti</h3>
-							<ul className="list-unstyled">
-								<li>Jomarnavarro201@gmail.com</li>
+							<ul className="list-unstyled w-100">
+								<li className="w-100">
+									<p className={styles.email}>Jomarnavarro201@gmail.com</p>
+								</li>
 							</ul>
 						</div>
 

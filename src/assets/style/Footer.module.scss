@@ -28,6 +28,14 @@
 	font-family: "Inconsolata", monospace;
 }
 
+.email {
+	word-break: break-word;
+	overflow-wrap: anywhere;
+	font-size: 0.9rem; /* Dimensione testo responsive */
+	text-align: left; /* Allineamento del testo */
+	max-width: 100%; /* Imposta una larghezza massima */
+}
+
 .skewed {
 	position: absolute;
 	top: 25%;
@@ -59,6 +67,21 @@
 
 /* Breakpoint per schermi extra piccoli */
 @media (max-width: 480px) {
+	.footer {
+		position: relative;
+		background-color: #02010a;
+		color: #fff;
+		text-align: center;
+		margin-top: 150px;
+	}
+
+	.card {
+		border: 1px solid #10002b;
+		background-color: #10002b;
+		border-radius: 10px;
+		padding: 0;
+	}
+
 	.skewed {
 		top: 0;
 	}

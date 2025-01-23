@@ -40,7 +40,7 @@ export default function BestProjects() {
 					<div className={`${styles.wrapper} row justify-content-center`}>
 						{bestProjects.map((project, index) => (
 							<div
-								className="col-12 col-sm-6 col-md-4 col-lg-3 m-4 mx-md-5"
+								className="col-12 col-sm-6 col-md-4 col-lg-3 my-4 mx-sm-5 mx-md-4 d-flex justify-content-center"
 								key={index}
 							>
 								<Card project={project} url={project.url} />

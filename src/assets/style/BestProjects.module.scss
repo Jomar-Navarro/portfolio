@@ -10,13 +10,13 @@
 	font-family: "Inconsolata", monospace;
 }
 
-.title:after,
-.title:before {
-	content: " ";
-	border-bottom: 1px solid rgba(85, 10, 101, 1);
-	border-top: 1px solid rgba(85, 10, 101, 1);
-	height: 10px;
-}
+// .title:after,
+// .title:before {
+// 	content: " ";
+// 	border-bottom: 1px solid rgba(85, 10, 101, 1);
+// 	border-top: 1px solid rgba(85, 10, 101, 1);
+// 	height: 10px;
+// }
 
 /* Breakpoint per schermi piccoli */
 @media (max-width: 1024px) and (orientation: landscape) {
