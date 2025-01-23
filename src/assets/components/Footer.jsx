@@ -22,7 +22,11 @@ export default function Footer() {
 									</a>
 								</li>
 								<li>
-									<a className={styles.icon} href="#">
+									<a
+										className={styles.icon}
+										href="public\CV\JOMAR_NAVARRO_CV_IT.pdf"
+										download="Jomar_Navarro_CV.pdf"
+									>
 										<i className="fa-solid fa-download"></i>
 									</a>
 								</li>
