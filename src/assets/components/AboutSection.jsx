@@ -7,9 +7,9 @@ export default function AboutPage() {
 	return (
 		<>
 			<div className={`${styles.wrapper}`}>
-				<div className="container-fluid d-flex justify-content-center align-items-center">
+				<div className="container-fluid d-flex justify-content-center align-items-center px-5">
 					<div className={`${styles.description}`}>
-						<div className="d-flex flex-column h-100 text-white mx-5 px-5">
+						<div className="d-flex flex-column h-100 text-white">
 							<p className="p-0 m-0">
 								Ciao! Sono Jomar, uno sviluppatore web full-stack appassionato
 								di tecnologia e gadget elettronici con esperienza in diversi
