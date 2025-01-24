@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
+import { Dropdown } from "react-bootstrap";
+import { FaGlobe } from "react-icons/fa"; // Icona del globo
+
 import styles from "../style/Header.module.scss";
 
 export default function Header() {
@@ -94,10 +97,22 @@ export default function Header() {
 							</li>
 						</ul>
 					</div>
-					<div className={styles.languageSwitcher}>
-						<button onClick={() => changeLanguage("en")}>EN</button>
-						<button onClick={() => changeLanguage("it")}>IT</button>
-					</div>
+
+					{/* Dropdown delle lingue con le icone */}
+					<Dropdown className={styles.languageSwitcher}>
+						<Dropdown.Toggle variant="" id="language-dropdown">
+							<FaGlobe /> {/* Icona del globo */}
+						</Dropdown.Toggle>
+
+						<Dropdown.Menu>
+							<Dropdown.Item onClick={() => changeLanguage("en")}>
+								EN
+							</Dropdown.Item>
+							<Dropdown.Item onClick={() => changeLanguage("it")}>
+								IT
+							</Dropdown.Item>
+						</Dropdown.Menu>
+					</Dropdown>
 				</nav>
 			</div>
 		</header>
