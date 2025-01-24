@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 import styles from "../style/Header.module.scss";
 
 export default function Header() {
+	const { t, i18n } = useTranslation(); // Hook per la traduzione
 	const [scrolled, setScrolled] = useState(false);
 	const [menuOpen, setMenuOpen] = useState(false);
 
@@ -26,6 +28,10 @@ export default function Header() {
 		setMenuOpen(!menuOpen);
 	};
 
+	// Funzione per cambiare lingua
+	const changeLanguage = (lng) => {
+		i18n.changeLanguage(lng);
+	};
 	return (
 		<header>
 			<div className="container d-flex justify-content-center my-4">
@@ -59,7 +65,7 @@ export default function Header() {
 											: `${styles["nav-link"]}`
 									}
 								>
-									Home
+									{t("home")}
 								</NavLink>
 							</li>
 							<li className="nav-item">
@@ -71,7 +77,7 @@ export default function Header() {
 											: `${styles["nav-link"]}`
 									}
 								>
-									Chi sono
+									{t("about")}
 								</NavLink>
 							</li>
 							<li className="nav-item">
@@ -83,10 +89,14 @@ export default function Header() {
 											: `${styles["nav-link"]}`
 									}
 								>
-									Progetti
+									{t("projects")}
 								</NavLink>
 							</li>
 						</ul>
+					</div>
+					<div className={styles.languageSwitcher}>
+						<button onClick={() => changeLanguage("en")}>EN</button>
+						<button onClick={() => changeLanguage("it")}>IT</button>
 					</div>
 				</nav>
 			</div>
