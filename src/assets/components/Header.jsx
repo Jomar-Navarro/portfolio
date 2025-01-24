@@ -68,7 +68,7 @@ export default function Header() {
 											: `${styles["nav-link"]}`
 									}
 								>
-									{t("home")}
+									{t("header.home")}
 								</NavLink>
 							</li>
 							<li className="nav-item">
@@ -80,7 +80,7 @@ export default function Header() {
 											: `${styles["nav-link"]}`
 									}
 								>
-									{t("about")}
+									{t("header.about")}
 								</NavLink>
 							</li>
 							<li className="nav-item">
@@ -92,7 +92,7 @@ export default function Header() {
 											: `${styles["nav-link"]}`
 									}
 								>
-									{t("projects")}
+									{t("header.projects")}
 								</NavLink>
 							</li>
 						</ul>

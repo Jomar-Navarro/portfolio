@@ -1,6 +1,11 @@
 {
-	"home": "Home",
-	"about": "Chi sono",
-	"projects": "Progetti",
-	"contact": "Contatto"
+	"header": {
+		"home": "Home",
+		"about": "Chi sono",
+		"projects": "Progetti"
+	},
+	"hero": {
+		"title": "Sviluppatore Web Full Stack Junior",
+		"subtitle": "Sono Jomar Navarro, un Full Stack Web Developer. Specializzato nella costruzione di applicazioni web moderne e intuitive. Esplora i miei progetti e scopri come posso dare vita alle tue idee!"
+	}
 }

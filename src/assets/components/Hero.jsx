@@ -1,10 +1,12 @@
 import Swiper from "./Swiper";
 import SplitText from "./SplitText";
 import selfImage from "../img/self.png";
+import { useTranslation } from "react-i18next";
 
 import styles from "../style/Hero.module.scss";
 
 export default function Hero() {
+	const { t } = useTranslation(); // Hook per la traduzione
 	return (
 		<>
 			<div className={`vh-100 d-flex flex-column justify-content-center`}>
@@ -16,7 +18,7 @@ export default function Hero() {
 					>
 						<div className={styles.title}>
 							<SplitText
-								text="Junior Full Stack Web Developer"
+								text={t("hero.title")}
 								className={styles.mainTitle}
 								delay={50}
 								animationFrom={{
@@ -28,11 +30,7 @@ export default function Hero() {
 								threshold={0.2}
 								rootMargin="-50px"
 							/>
-							<p className={styles.subtitle}>
-								Sono Jomar Navarro, Full Stack Web Developer. Specializzato
-								nella creazione di applicazioni web moderne e intuitive. Esplora
-								i miei progetti e scopri come posso dare vita alle tue idee!
-							</p>
+							<p className={styles.subtitle}>{t("hero.subtitle")}</p>
 						</div>
 
 						<div className={styles.image}>
