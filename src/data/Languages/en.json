@@ -8,7 +8,6 @@
 		"title": "Junior Full Stack Web Developer",
 		"subtitle": "I am Jomar Navarro, a Full Stack Web Developer. Specialized in building modern and intuitive web applications. Explore my projects and see how I can bring your ideas to life!"
 	},
-
 	"aboutSection": {
 		"greeting": "Hi! I'm Jomar, a full-stack web developer passionate about technology and electronic gadgets with experience in various technological languages. My curiosity and competitiveness define me. I constantly seek new challenges to grow professionally and contribute to innovative projects.",
 		"learnMore": "Learn more about me...",
@@ -28,5 +27,42 @@
 		"contacts": "Contacts",
 		"siteStructure": "Site Structure",
 		"rightsReserved": "© 2025 Jomar Navarro. All rights reserved"
+	},
+	"about": {
+		"greeting": "Hi! I'm Jomar, a full-stack web developer passionate about technology and electronic gadgets with experience in various technological languages. My curiosity and competitiveness define me. I constantly seek new challenges to grow professionally and contribute to innovative projects.",
+		"learnMore": "Learn more about me...",
+		"workTogether": "Would you like to work together?",
+		"downloadCV": "Download my CV",
+		"about": "About",
+		"me": "Me",
+		"title": "About Me",
+		"personalIntroduction": "Personal Introduction",
+		"introductionText": "My name is <strong>Jomar Navarro</strong> and I am a curious, competitive, and technology enthusiast. I love to challenge myself and find innovative ways to solve complex problems, creating digital experiences that combine creativity and functionality. My work as a <strong>Full Stack Web Developer</strong> allows me to shape ideas into useful and accessible tools for everyone.",
+		"educationAndWork": "Education and Work Experience",
+		"diploma": "Diploma: Mechanics and Mechatronics, I.I.S A. Avogadro.",
+		"master": "Master Full Stack Web Development: Boolean (700 hours, live and practical).",
+		"experiences": "Experiences:",
+		"experienceDetail": "Jr. Full Stack Developer Trainee: Development of an app for searching movies and TV series inspired by Netflix.",
+		"skills": "Main Skills",
+		"skillsList": [
+			"HTML",
+			"CSS",
+			"SASS",
+			"JavaScript",
+			"Vue.js",
+			"React",
+			"PHP",
+			"Laravel",
+			"MySQL",
+			"Bootstrap",
+			"Tailwind"
+		],
+		"goals": "Goals and Aspirations",
+		"goalsText": "My goal is to continue growing professionally, perfecting my skills in frameworks like <strong>React</strong> and <strong>Angular</strong> and developing innovative projects. The dream? To create an AI like Iron Man's Jarvis, which can simplify everyday life.",
+		"projects": "Projects and Achievements",
+		"projectsList": [
+			"Hackathon 2024: Designed and developed a UI for a totem using React and Directus.",
+			"Food Delivery App: Developed with Laravel, including secure payment systems and scalable order management."
+		]
 	}
 }

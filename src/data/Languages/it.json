@@ -27,5 +27,42 @@
 		"contacts": "Contatti",
 		"siteStructure": "Struttura sito",
 		"rightsReserved": "© 2025 Jomar Navarro. Tutti i diritti riservati"
+	},
+	"about": {
+		"greeting": "Ciao! Sono Jomar, uno sviluppatore web full-stack appassionato di tecnologia e gadget elettronici con esperienza in diversi linguaggi tecnologici. Mi definiscono la mia curiosità e la mia competitività. Cerco costantemente nuove sfide per crescere professionalmente e contribuire a progetti innovativi.",
+		"learnMore": "Scopri di più su di me...",
+		"workTogether": "Ti va di lavorare insieme?",
+		"downloadCV": "Scarica il mio CV",
+		"about": "Su di",
+		"me": "me",
+		"title": "Su di me",
+		"personalIntroduction": "Introduzione Personale",
+		"introductionText": "Mi chiamo <strong>Jomar Navarro</strong> e sono una persona curiosa, competitiva e appassionata di tecnologia. Adoro mettermi in gioco e trovare modi innovativi per risolvere problemi complessi, creando esperienze digitali che uniscono creatività e funzionalità. Il mio lavoro come <strong>Full Stack Web Developer</strong> mi permette di dare forma alle idee, rendendole strumenti utili e accessibili per tutti.",
+		"educationAndWork": "Percorso Formativo e Lavorativo",
+		"diploma": "Diploma: Meccanica e Meccatronica, I.I.S A. Avogadro.",
+		"master": "Master Full Stack Web Development: Boolean (700 ore, live e pratiche).",
+		"experiences": "Esperienze:",
+		"experienceDetail": "Jr. Full Stack Developer Trainee: Sviluppo di un'app per la ricerca di film e serie TV ispirata a Netflix.",
+		"skills": "Competenze Principali",
+		"skillsList": [
+			"HTML",
+			"CSS",
+			"SASS",
+			"JavaScript",
+			"Vue.js",
+			"React",
+			"PHP",
+			"Laravel",
+			"MySQL",
+			"Bootstrap",
+			"Tailwind"
+		],
+		"goals": "Obiettivi e Aspirazioni",
+		"goalsText": "Il mio obiettivo è continuare a crescere professionalmente, perfezionando le mie competenze su framework come <strong>React</strong> e <strong>Angular</strong> e sviluppando progetti innovativi. Il sogno? Creare un'AI come Jarvis di Iron Man, che possa semplificare la vita quotidiana.",
+		"projects": "Progetti e Successi",
+		"projectsList": [
+			"Hackathon 2024: Progettato e sviluppato una UI per un totem utilizzando React e Directus.",
+			"Food Delivery App: Sviluppata con Laravel, includendo sistemi di pagamento sicuri e gestione ordini scalabile."
+		]
 	}
 }

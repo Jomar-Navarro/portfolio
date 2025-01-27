@@ -1,6 +1,10 @@
+import { useTranslation } from "react-i18next";
+
 import styles from "../assets/style/About.module.scss";
 
 export default function About() {
+	const { t } = useTranslation(); // Hook per la traduzione
+
 	const birthDate = "2002-03-31";
 
 	const calculateAge = (birthDate) => {
@@ -25,51 +29,33 @@ export default function About() {
 			<div className="container">
 				<div className={`${styles.aboutContent} row justify-content-center`}>
 					<div className="col-md-8">
-						<h1 className="text-center my-4">Su di me</h1>
+						<h1 className="text-center my-4">{t("about.title")}</h1>
 
 						{/* Introduzione Personale */}
 						<div className="mb-5">
-							<h2>Introduzione Personale</h2>
-							<p>
-								Mi chiamo <strong>Jomar Navarro</strong> e sono una persona
-								curiosa, competitiva e appassionata di tecnologia. Adoro
-								mettermi in gioco e trovare modi innovativi per risolvere
-								problemi complessi, creando esperienze digitali che uniscono
-								creatività e funzionalità. Il mio lavoro come{" "}
-								<strong>Full Stack Web Developer</strong> mi permette di dare
-								forma alle idee, rendendole strumenti utili e accessibili per
-								tutti.
-							</p>
+							<h2>{t("about.personalIntroduction")}</h2>
+							<p
+								dangerouslySetInnerHTML={{
+									__html: t("about.introductionText"),
+								}}
+							/>
 						</div>
 
 						{/* Percorso Formativo e Lavorativo */}
 						<div className="mb-5">
 							<h2 className="h4">Percorso Formativo e Lavorativo</h2>
+							<h2 className="h4">{t("about.educationAndWork")}</h2>
 							<ul className="list-unstyled">
 								<li>
-									<strong>Diploma:</strong> Meccanica e Meccatronica, I.I.S A.
-									Avogadro.
+									<strong>{t("about.diploma")}</strong>
 								</li>
 								<li>
-									<strong>Master Full Stack Web Development:</strong> Boolean
-									(700 ore, live e pratiche).
+									<strong>{t("about.master")}</strong>
 								</li>
 								<li>
-									<strong>Esperienze:</strong>
+									<strong>{t("about.experiences")}</strong>
 									<ul>
-										<li>
-											Jr. Full Stack Developer Trainee: Sviluppo di un'app per
-											la ricerca di film e serie TV ispirata a Netflix.
-										</li>
-										<li>
-											Sviluppatore per piattaforma di food delivery:
-											Implementazione sistemi di pagamento e gestione ordini con
-											Laravel.
-										</li>
-										<li>
-											Collaudatore nel settore manifatturiero: Controllo qualità
-											e verifica tolleranze.
-										</li>
+										<li>{t("about.experienceDetail")}</li>
 									</ul>
 								</li>
 							</ul>
@@ -77,47 +63,36 @@ export default function About() {
 
 						{/* Competenze Principali */}
 						<div className="mb-5">
-							<h2 className="h4">Competenze Principali</h2>
+							<h2 className="h4">{t("about.skills")}</h2>
 							<ul className="list-inline">
-								<li className="list-inline-item">HTML</li>
-								<li className="list-inline-item">CSS</li>
-								<li className="list-inline-item">SASS</li>
-								<li className="list-inline-item">JavaScript</li>
-								<li className="list-inline-item">Vue.js</li>
-								<li className="list-inline-item">React</li>
-								<li className="list-inline-item">PHP</li>
-								<li className="list-inline-item">Laravel</li>
-								<li className="list-inline-item">MySQL</li>
-								<li className="list-inline-item">Bootstrap</li>
-								<li className="list-inline-item">Tailwind</li>
+								{t("about.skillsList", { returnObjects: true }).map(
+									(skill, index) => (
+										<li key={index} className="list-inline-item">
+											{skill}
+										</li>
+									)
+								)}
 							</ul>
 						</div>
 
 						{/* Obiettivi e Aspirazioni */}
 						<div className="mb-5">
-							<h2 className="h4">Obiettivi e Aspirazioni</h2>
-							<p>
-								Il mio obiettivo è continuare a crescere professionalmente,
-								perfezionando le mie competenze su framework come{" "}
-								<strong>React</strong> e <strong>Angular</strong> e sviluppando
-								progetti innovativi. Il sogno? Creare un'AI come Jarvis di Iron
-								Man, che possa semplificare la vita quotidiana.
-							</p>
+							<h2 className="h4">{t("about.goals")}</h2>
+							<p dangerouslySetInnerHTML={{ __html: t("about.goalsText") }} />
 						</div>
 
 						{/* Progetti e Successi */}
 						<div className="mb-5">
-							<h2 className="h4">Progetti e Successi</h2>
+							<h2 className="h4">{t("about.projects")}</h2>
 							<ul className="list-unstyled">
-								<li>
-									<strong>Hackathon 2024:</strong> Progettato e sviluppato una
-									UI per un totem utilizzando React e Directus.
-								</li>
-								<li>
-									<strong>Food Delivery App:</strong> Sviluppata con Laravel,
-									includendo sistemi di pagamento sicuri e gestione ordini
-									scalabile.
-								</li>
+								{t("about.projectsList", { returnObjects: true }).map(
+									(project, index) => (
+										<li key={index}>
+											<strong>{project.split(":")[0]}:</strong>{" "}
+											{project.split(":")[1]}
+										</li>
+									)
+								)}
 							</ul>
 						</div>
 
