@@ -18,5 +18,9 @@
 	},
 	"bestProjects": {
 		"title": "Benvenuti ai miei progetti migliori!"
+	},
+	"card": {
+		"madeBy": "Realizzato da",
+		"noDateAvailable": "Data non disponibile"
 	}
 }
