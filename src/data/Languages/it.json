@@ -22,5 +22,10 @@
 	"card": {
 		"madeBy": "Realizzato da",
 		"noDateAvailable": "Data non disponibile"
+	},
+	"footer": {
+		"contacts": "Contatti",
+		"siteStructure": "Struttura sito",
+		"rightsReserved": "© 2025 Jomar Navarro. Tutti i diritti riservati"
 	}
 }
