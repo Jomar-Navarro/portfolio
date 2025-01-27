@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Card from "../components/Card";
 import ProjectsApi from "../../data/ProjectsAPI";
+import { useTranslation } from "react-i18next";
+
 import styles from "../style/BestProjects.module.scss";
 
 export default function BestProjects() {
+	const { t } = useTranslation(); // Hook per la traduzione
 	const [projects, setProjects] = useState([]);
 	const [loading, setLoading] = useState(true);
 
@@ -36,7 +39,7 @@ export default function BestProjects() {
 		<>
 			<div className="d-flex justify-content-center align-items-center">
 				<div className="container-fluid my-5">
-					<h1 className={styles.title}>Benvenuti ai miei progetti migliori!</h1>
+					<h1 className={styles.title}>{t("bestProjects.title")}</h1>
 					<div className={`${styles.wrapper} row justify-content-center`}>
 						{bestProjects.map((project, index) => (
 							<div

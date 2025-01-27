@@ -16,5 +16,8 @@
 		"downloadCV": "Download my CV",
 		"about": "About",
 		"me": "Me"
+	},
+	"bestProjects": {
+		"title": "Welcome to my best projects!"
 	}
 }
