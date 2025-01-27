@@ -7,5 +7,12 @@
 	"hero": {
 		"title": "Junior Full Stack Web Developer",
 		"subtitle": "I am Jomar Navarro, a Full Stack Web Developer. Specialized in building modern and intuitive web applications. Explore my projects and see how I can bring your ideas to life!"
+	},
+
+	"about": {
+		"greeting": "Hi! I'm Jomar, a full-stack web developer passionate about technology and electronic gadgets with experience in various technological languages. My curiosity and competitiveness define me. I constantly seek new challenges to grow professionally and contribute to innovative projects.",
+		"learnMore": "Learn more about me...",
+		"workTogether": "Would you like to work together?",
+		"downloadCV": "Download my CV"
 	}
 }
