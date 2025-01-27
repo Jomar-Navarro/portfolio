@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import ProjectsApi from "../../data/ProjectsAPI";
 import Card from "./Card";
 import Loader from "./Loader";
@@ -7,6 +8,7 @@ import Paginator from "./Paginator";
 import styles from "../style/ProjectsPage.module.scss";
 
 export default function ProjectsPage() {
+	const { t } = useTranslation(); // Hook per la traduzione
 	const [projects, setProjects] = useState([]);
 	const [loading, setLoading] = useState(true);
 	const [currentPage, setCurrentPage] = useState(1);
@@ -41,8 +43,8 @@ export default function ProjectsPage() {
 	return (
 		<>
 			<div className="container d-flex justify-content-center align-items-center flex-column text-center text-white mt-5">
-				<h1>Benvenuti ai miei Progetti</h1>
-				<p>Qui trovate tutti i progetti su cui ho lavorato.</p>
+				<h1>{t("projectsPage.title")}</h1>
+				<p>{t("projectsPage.subtitle")}</p>
 
 				<div className="row d-flex justify-content-center align-items-center">
 					{currentProjects.map((project, index) => (

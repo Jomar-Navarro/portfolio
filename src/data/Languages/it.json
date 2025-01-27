@@ -68,5 +68,9 @@
 		"hobbiesText": "Oltre al coding, mi dedico a migliorare la mia forma fisica, con l'obiettivo di dimagrire e costruire muscoli. Mi appassiona esplorare nuove tecnologie e trovare soluzioni creative per problemi complessi.",
 		"callToAction": "Contattami",
 		"callToActionText": "Se desideri collaborare o conoscere meglio il mio lavoro, visita il mio <a href='http://www.linkedin.com/in/jomar-navarro' target='_blank' rel='noopener noreferrer'>LinkedIn</a> o il mio <a href='https://github.com/Jomar-Navarro' target='_blank' rel='noopener noreferrer'>GitHub</a>."
+	},
+	"projectsPage": {
+		"title": "Benvenuti ai miei Progetti",
+		"subtitle": "Qui trovate tutti i progetti su cui ho lavorato."
 	}
 }
