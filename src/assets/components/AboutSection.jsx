@@ -36,10 +36,9 @@ export default function AboutPage() {
 					</div>
 
 					<div className={styles.image}>
-						<h3 className="text-white text-end">
-							Su di
-							<br />
-							me
+						<h3 className="text-white text-end lh-1">
+							{t("aboutSection.about")} <br />
+							{t("aboutSection.me")}
 						</h3>
 						<img src="src/assets/img/about-section.png" alt="About Me" />
 					</div>
