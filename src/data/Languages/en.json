@@ -63,6 +63,10 @@
 		"projectsList": [
 			"Hackathon 2024: Designed and developed a UI for a totem using React and Directus.",
 			"Food Delivery App: Developed with Laravel, including secure payment systems and scalable order management."
-		]
+		],
+		"hobbies": "Hobbies and Interests",
+		"hobbiesText": "Besides coding, I dedicate myself to improving my physical fitness, with the goal of losing weight and building muscle. I am passionate about exploring new technologies and finding creative solutions to complex problems.",
+		"callToAction": "Contact Me",
+		"callToActionText": "If you want to collaborate or learn more about my work, visit my <a href='http://www.linkedin.com/in/jomar-navarro' target='_blank' rel='noopener noreferrer'>LinkedIn</a> or my <a href='https://github.com/Jomar-Navarro' target='_blank' rel='noopener noreferrer'>GitHub</a>."
 	}
 }

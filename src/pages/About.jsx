@@ -98,38 +98,20 @@ export default function About() {
 
 						{/* Hobby e Interessi */}
 						<div className="mb-5">
-							<h2 className="h4">Hobby e Interessi</h2>
-							<p>
-								Oltre al coding, mi dedico a migliorare la mia forma fisica, con
-								l'obiettivo di dimagrire e costruire muscoli. Mi appassiona
-								esplorare nuove tecnologie e trovare soluzioni creative per
-								problemi complessi.
-							</p>
+							<h2 className="h4">{t("about.hobbies")}</h2>
+							<p dangerouslySetInnerHTML={{ __html: t("about.hobbiesText") }} />
 						</div>
 
 						{/* Chiamata all'Azione */}
 						<div className="text-center">
-							<h2 className="h4">Contattami</h2>
-							<p>
-								Se desideri collaborare o conoscere meglio il mio lavoro, visita
-								il mio{" "}
-								<a
-									href="http://www.linkedin.com/in/jomar-navarro"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									LinkedIn
-								</a>{" "}
-								o il mio{" "}
-								<a
-									href="https://github.com/Jomar-Navarro"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									GitHub
-								</a>
-								.
-							</p>
+							<div className="text-center">
+								<h2 className="h4">{t("about.callToAction")}</h2>
+								<p
+									dangerouslySetInnerHTML={{
+										__html: t("about.callToActionText"),
+									}}
+								/>
+							</div>
 						</div>
 					</div>
 				</div>
