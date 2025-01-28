@@ -76,5 +76,9 @@
 	"paginator": {
 		"prev": "Prev",
 		"next": "Next"
+	},
+	"loader": {
+		"status": "Status",
+		"loading": "Loading..."
 	}
 }
