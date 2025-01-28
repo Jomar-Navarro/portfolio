@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 import { Dropdown } from "react-bootstrap";
 import { FaGlobe } from "react-icons/fa"; // Icona del globo
-import { FiFlag } from "react-icons/fi";
 
 import styles from "../style/Header.module.scss";
 
