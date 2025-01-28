@@ -12,7 +12,7 @@ export default function AboutPage() {
 			<div className="container-fluid container-lg d-flex justify-content-center align-items-center px-5">
 				<div className={`${styles.wrapper}`}>
 					<div className={`${styles.description}`}>
-						<div className="d-flex flex-column h-100 text-white  justify-content-center">
+						<div className="d-flex flex-column h-100 text-white justify-content-center">
 							<p className="p-0 m-0">{t("aboutSection.greeting")}</p>
 							<p className="p-0 m-0">
 								<NavLink to="/about" className="text-white text-end">
@@ -20,8 +20,8 @@ export default function AboutPage() {
 								</NavLink>
 							</p>
 
-							<div className="pt-4 d-flex flex-column align-items-start">
-								<span className="w-100 fs-3 fw-bolder">
+							<div className="pt-4 d-flex flex-column align-items-start w-75">
+								<span className="w-100 fs-3 fw-bolder text-center">
 									{t("aboutSection.workTogether")}
 								</span>
 								<div className={styles.download}>
