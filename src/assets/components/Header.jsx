@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 import { Dropdown } from "react-bootstrap";
 import { FaGlobe } from "react-icons/fa"; // Icona del globo
+import { FiFlag } from "react-icons/fi";
 
 import styles from "../style/Header.module.scss";
 
@@ -106,10 +107,10 @@ export default function Header() {
 
 						<Dropdown.Menu>
 							<Dropdown.Item onClick={() => changeLanguage("en")}>
-								EN
+								<span className="fi fi-sh"></span>
 							</Dropdown.Item>
 							<Dropdown.Item onClick={() => changeLanguage("it")}>
-								IT
+								<span className="fi fi-it"></span>
 							</Dropdown.Item>
 						</Dropdown.Menu>
 					</Dropdown>
