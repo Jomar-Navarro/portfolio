@@ -72,5 +72,9 @@
 	"projectsPage": {
 		"title": "Welcome to my Projects",
 		"subtitle": "Here you can find all the projects I have worked on."
+	},
+	"paginator": {
+		"prev": "Prev",
+		"next": "Next"
 	}
 }

@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
+
 import styles from "../style/Paginator.module.scss";
 
 export default function Paginator({
@@ -7,6 +9,7 @@ export default function Paginator({
 	itemsPerPage,
 	onPageChange,
 }) {
+	const { t } = useTranslation(); // Hook per la traduzione
 	const [animationClass, setAnimationClass] = useState("");
 	const totalPages = Math.ceil(totalItems / itemsPerPage);
 
@@ -35,7 +38,7 @@ export default function Paginator({
 					onClick={() => handlePaginate("prev")}
 					disabled={currentPage === 1}
 				>
-					Prev
+					{t("paginator.prev")}
 				</button>
 				<div className={styles.paginationState}>
 					<span className={styles.counterCurrent}>{currentPage}</span>
@@ -47,7 +50,7 @@ export default function Paginator({
 					onClick={() => handlePaginate("next")}
 					disabled={currentPage === totalPages}
 				>
-					Next
+					{t("paginator.next")}
 				</button>
 			</section>
 		</div>
