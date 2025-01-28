@@ -187,8 +187,60 @@ nav {
 	}
 }
 
-.flagIcon {
-	width: 20px;
-	height: auto;
-	margin-right: 8px;
+.languageSwitcher {
+	.btn {
+		border: none !important;
+	}
+	.dropdown-toggle {
+		color: #fff;
+		font-size: 1rem;
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+
+		&:hover,
+		&:focus {
+			background-color: rgba(255, 255, 255, 0.1);
+			outline: none;
+		}
+	}
+
+	.flagIcon {
+		width: 20px;
+		height: auto;
+		margin-right: 8px;
+	}
+
+	#languageDropdown {
+		display: flex;
+		align-items: center;
+		background-color: transparent;
+		border: none;
+		font-size: 1rem;
+		padding: 0.5rem 1rem;
+		cursor: pointer;
+
+		&:hover,
+		&:focus {
+			background-color: rgba(255, 255, 255, 0.1);
+			outline: none;
+		}
+	}
+
+	.dropdownMenu {
+		background-color: #222;
+		border: none;
+		border-radius: 0.5rem;
+		padding: 0.5rem 0;
+
+		.dropdownItem {
+			color: #fff;
+			padding: 0.5rem 1rem;
+			&:hover,
+			&:focus {
+				background-color: rgba(255, 255, 255, 0.1);
+				color: #222;
+			}
+		}
+	}
 }

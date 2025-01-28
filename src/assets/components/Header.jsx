@@ -10,6 +10,7 @@ export default function Header() {
 	const { t, i18n } = useTranslation(); // Hook per la traduzione
 	const [scrolled, setScrolled] = useState(false);
 	const [menuOpen, setMenuOpen] = useState(false);
+	const [currentLanguage, setCurrentLanguage] = useState(i18n.language);
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -34,6 +35,17 @@ export default function Header() {
 	// Funzione per cambiare lingua
 	const changeLanguage = (lng) => {
 		i18n.changeLanguage(lng);
+	};
+
+	const getFlagIcon = (language) => {
+		switch (language) {
+			case "en":
+				return <span className="fi fi-gb"></span>;
+			case "it":
+				return <span className="fi fi-it"></span>;
+			default:
+				return <FaGlobe />;
+		}
 	};
 	return (
 		<header>
@@ -100,15 +112,21 @@ export default function Header() {
 
 					{/* Dropdown delle lingue con le icone */}
 					<Dropdown className={styles.languageSwitcher}>
-						<Dropdown.Toggle variant="" id="language-dropdown">
-							<FaGlobe /> {/* Icona del globo */}
+						<Dropdown.Toggle variant="" id={styles.languageDropdown}>
+							{getFlagIcon(currentLanguage)}
 						</Dropdown.Toggle>
 
-						<Dropdown.Menu>
-							<Dropdown.Item onClick={() => changeLanguage("en")}>
+						<Dropdown.Menu className={styles.dropdownMenu}>
+							<Dropdown.Item
+								className={styles.dropdownItem}
+								onClick={() => changeLanguage("en")}
+							>
 								<span className="fi fi-sh"></span>
 							</Dropdown.Item>
-							<Dropdown.Item onClick={() => changeLanguage("it")}>
+							<Dropdown.Item
+								className={styles.dropdownItem}
+								onClick={() => changeLanguage("it")}
+							>
 								<span className="fi fi-it"></span>
 							</Dropdown.Item>
 						</Dropdown.Menu>
