@@ -13,6 +13,7 @@ export default function Header() {
 	const [currentLanguage, setCurrentLanguage] = useState(i18n.language);
 
 	useEffect(() => {
+		// Listener per lo scroll
 		const handleScroll = () => {
 			if (window.scrollY > 50) {
 				setScrolled(true);
@@ -23,10 +24,19 @@ export default function Header() {
 
 		window.addEventListener("scroll", handleScroll);
 
+		// Listener per il cambio di lingua
+		const handleLanguageChange = (lng) => {
+			setCurrentLanguage(lng); // Aggiorna lo stato con la nuova lingua
+		};
+
+		i18n.on("languageChanged", handleLanguageChange); // Aggiungi il listener
+
+		// Pulizia degli event listener
 		return () => {
 			window.removeEventListener("scroll", handleScroll);
+			i18n.off("languageChanged", handleLanguageChange); // Rimuovi il listener
 		};
-	}, []);
+	}, [i18n]); // Aggiungi i18n come dipendenza
 
 	const toggleMenu = () => {
 		setMenuOpen(!menuOpen);
