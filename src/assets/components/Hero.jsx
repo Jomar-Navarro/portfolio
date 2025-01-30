@@ -9,9 +9,11 @@ export default function Hero() {
 	const { t } = useTranslation(); // Hook per la traduzione
 	return (
 		<>
-			<div className={`vh-100 d-flex flex-column justify-content-center`}>
+			<div
+				className={`${styles.Hero} vh-100 d-flex flex-column justify-content-center`}
+			>
 				<div
-					className={`${styles.Hero} container container-md container-sm d-flex align-items-center`}
+					className={` container container-md container-sm d-flex align-items-center`}
 				>
 					<div
 						className={`${styles.wrapper} d-flex justify-content-center text-center text-white`}
