@@ -148,13 +148,16 @@ nav {
 	}
 
 	.dropdownMenu {
+		position: absolute;
+		min-width: 70%;
 		background-color: transparent;
 		border: none;
 		border-radius: 0.5rem;
 		padding: 0.5rem 0;
 		.dropdownItem {
+			background-color: rgba(137, 16, 155, 0.5);
 			padding: 0.5rem;
-			width: 45%;
+			width: 100%;
 			display: flex;
 			align-items: center;
 			justify-content: center;
