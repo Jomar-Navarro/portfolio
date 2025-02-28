@@ -14,12 +14,18 @@ export default function Footer() {
 							<h3>Jomar Navarro</h3>
 							<ul className="list-unstyled d-flex align-items-center justify-content-start fs-1">
 								<li>
-									<a className={styles.icon} href="#">
+									<a
+										className={styles.icon}
+										href="http://www.linkedin.com/in/jomar-navarro"
+									>
 										<i className="fa-brands fa-linkedin"></i>
 									</a>
 								</li>
 								<li className="mx-4">
-									<a className={styles.icon} href="#">
+									<a
+										className={styles.icon}
+										href="https://github.com/Jomar-Navarro"
+									>
 										<i className="fa-brands fa-square-github"></i>
 									</a>
 								</li>
