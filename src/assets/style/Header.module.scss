@@ -53,6 +53,7 @@ nav {
 
 .isActive {
 	color: #060730;
+	filter: drop-shadow(1px 1px 1px #fff);
 	font-weight: bold;
 	text-decoration: none;
 	padding-bottom: 30px;
