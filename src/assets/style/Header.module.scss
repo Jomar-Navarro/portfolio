@@ -20,7 +20,7 @@
 	}
 }
 
-nav {
+.header {
 	border: solid 2px #060730;
 	background: linear-gradient(160deg, rgb(1, 0, 23) 40%, #89109b 100%);
 	background-repeat: no-repeat;
@@ -276,6 +276,7 @@ nav {
 @media (max-width: 480px) {
 	nav {
 		height: 80px; /* Altezza in pixel per coerenza su schermi piccoli */
+
 		.title {
 			font-size: 1.2rem;
 		}
