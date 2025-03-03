@@ -22,6 +22,7 @@
 
 nav {
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
 }
 
@@ -252,7 +253,7 @@ nav {
 	.languageSwitcher {
 		position: fixed; /* Cambia da absolute a fixed */
 		top: 650px; /* Distanza dal basso */
-		right: 50px; /* Distanza da sinistra */
+		right: 0px; /* Distanza da sinistra */
 		z-index: 1000;
 		padding: 5px;
 		border-radius: 50%; /* Rende il bottone circolare */
@@ -270,17 +271,17 @@ nav {
 
 		.dropdownMenu {
 			width: auto;
-			min-width: 100px;
-			bottom: 60px; /* Posiziona il menu sopra il bottone */
-			left: 0;
-			top: auto; /* Sovrascrive la posizione predefinita */
+			.dropdownItem {
+				width: 100%;
+			}
 		}
 	}
 }
 
 @media (max-width: 480px) {
-	nav {
+	.hamburger {
 		position: absolute;
+		left: 84%;
 	}
 	.header {
 		height: 80px; /* Altezza in pixel per coerenza su schermi piccoli */

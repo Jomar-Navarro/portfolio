@@ -82,72 +82,73 @@ export default function Header() {
 									<path className={styles.line} d="M7 16 27 16"></path>
 								</svg>
 							</label>
+							<div
+								className={`${styles.navLinks} ${
+									menuOpen ? styles.active : ""
+								}`}
+							>
+								<ul className="nav">
+									<li className="nav-item">
+										<NavLink
+											to="/"
+											className={({ isActive }) =>
+												isActive
+													? `${styles["nav-link"]} ${styles.isActive}`
+													: `${styles["nav-link"]}`
+											}
+										>
+											{t("header.home")}
+										</NavLink>
+									</li>
+									<li className="nav-item">
+										<NavLink
+											to="/about"
+											className={({ isActive }) =>
+												isActive
+													? `${styles["nav-link"]} ${styles.isActive}`
+													: `${styles["nav-link"]}`
+											}
+										>
+											{t("header.about")}
+										</NavLink>
+									</li>
+									<li className="nav-item">
+										<NavLink
+											to="/projects"
+											className={({ isActive }) =>
+												isActive
+													? `${styles["nav-link"]} ${styles.isActive}`
+													: `${styles["nav-link"]}`
+											}
+										>
+											{t("header.projects")}
+										</NavLink>
+									</li>
+								</ul>
+							</div>
+
+							{/* Dropdown delle lingue con le icone */}
+							<Dropdown className={styles.languageSwitcher}>
+								<Dropdown.Toggle variant="" id={styles.languageDropdown}>
+									{getFlagIcon(currentLanguage)}
+								</Dropdown.Toggle>
+
+								<Dropdown.Menu className={styles.dropdownMenu}>
+									<Dropdown.Item
+										className={styles.dropdownItem}
+										onClick={() => changeLanguage("en")}
+									>
+										<span className="fi fi-sh"></span>
+									</Dropdown.Item>
+									<Dropdown.Item
+										className={styles.dropdownItem}
+										onClick={() => changeLanguage("it")}
+									>
+										<span className="fi fi-it"></span>
+									</Dropdown.Item>
+								</Dropdown.Menu>
+							</Dropdown>
 						</div>
-
-						<div
-							className={`${styles.navLinks} ${menuOpen ? styles.active : ""}`}
-						>
-							<ul className="nav">
-								<li className="nav-item">
-									<NavLink
-										to="/"
-										className={({ isActive }) =>
-											isActive
-												? `${styles["nav-link"]} ${styles.isActive}`
-												: `${styles["nav-link"]}`
-										}
-									>
-										{t("header.home")}
-									</NavLink>
-								</li>
-								<li className="nav-item">
-									<NavLink
-										to="/about"
-										className={({ isActive }) =>
-											isActive
-												? `${styles["nav-link"]} ${styles.isActive}`
-												: `${styles["nav-link"]}`
-										}
-									>
-										{t("header.about")}
-									</NavLink>
-								</li>
-								<li className="nav-item">
-									<NavLink
-										to="/projects"
-										className={({ isActive }) =>
-											isActive
-												? `${styles["nav-link"]} ${styles.isActive}`
-												: `${styles["nav-link"]}`
-										}
-									>
-										{t("header.projects")}
-									</NavLink>
-								</li>
-							</ul>
-						</div>
-
-						{/* Dropdown delle lingue con le icone */}
-						<Dropdown className={styles.languageSwitcher}>
-							<Dropdown.Toggle variant="" id={styles.languageDropdown}>
-								{getFlagIcon(currentLanguage)}
-							</Dropdown.Toggle>
-
-							<Dropdown.Menu className={styles.dropdownMenu}>
-								<Dropdown.Item
-									className={styles.dropdownItem}
-									onClick={() => changeLanguage("en")}
-								>
-									<span className="fi fi-sh"></span>
-								</Dropdown.Item>
-								<Dropdown.Item
-									className={styles.dropdownItem}
-									onClick={() => changeLanguage("it")}
-								>
-									<span className="fi fi-it"></span>
-								</Dropdown.Item>
-							</Dropdown.Menu>
-						</Dropdown>
 					</nav>
 				</div>
 			</div>
