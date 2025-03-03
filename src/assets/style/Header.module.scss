@@ -20,6 +20,11 @@
 	}
 }
 
+nav {
+	display: flex;
+	align-items: center;
+}
+
 .header {
 	border: solid 2px #060730;
 	background: linear-gradient(160deg, rgb(1, 0, 23) 40%, #89109b 100%);
@@ -172,7 +177,7 @@
 		margin-top: 50px;
 	}
 
-	nav {
+	.header {
 		.title {
 			font-size: 2rem; /* Dimensione titolo per schermi medi */
 		}
@@ -201,7 +206,7 @@
 
 /* Media Queries */
 @media (max-width: 768px) {
-	nav {
+	.header {
 		.title {
 			font-size: 1.2rem;
 		}
@@ -247,7 +252,7 @@
 	.languageSwitcher {
 		position: fixed; /* Cambia da absolute a fixed */
 		top: 650px; /* Distanza dal basso */
-		left: 20px; /* Distanza da sinistra */
+		right: 50px; /* Distanza da sinistra */
 		z-index: 1000;
 		padding: 5px;
 		border-radius: 50%; /* Rende il bottone circolare */
@@ -275,8 +280,10 @@
 
 @media (max-width: 480px) {
 	nav {
+		position: absolute;
+	}
+	.header {
 		height: 80px; /* Altezza in pixel per coerenza su schermi piccoli */
-
 		.title {
 			font-size: 1.2rem;
 		}
