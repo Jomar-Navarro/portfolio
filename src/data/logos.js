@@ -1,31 +1,17 @@
-// Importa i percorsi delle immagini
-import htmlLogo from "../assets/img/logo/html-logo.svg";
-import cssLogo from "../assets/img/logo/css-logo.svg";
-import jsLogo from "../assets/img/logo/javascript-logo.svg";
-import reactLogo from "../assets/img/logo/react-logo.svg";
-import vueLogo from "../assets/img/logo/vue-logo.svg";
-import phpLogo from "../assets/img/logo/php-logo.svg";
-import laravelLogo from "../assets/img/logo/laravel-logo.svg";
-import nextjsLogo from "../assets/img/logo/nextjs-logo.svg";
-import tailwindLogo from "../assets/img/logo/tailwind-logo.svg";
-import viteLogo from "../assets/img/logo/vite-logo.svg";
-import scssLogo from "../assets/img/logo/scss-logo.svg";
-import bootstapLogo from "../assets/img/logo/boostrap-logo.svg";
-
 // Definisci l'array di loghi
 const logos = [
-	{ src: htmlLogo, alt: "HTML Logo" },
-	{ src: cssLogo, alt: "CSS Logo" },
-	{ src: jsLogo, alt: "JavaScript Logo" },
-	{ src: reactLogo, alt: "React Logo" },
-	{ src: vueLogo, alt: "Vue.js Logo" },
-	{ src: phpLogo, alt: "PHP Logo" },
-	{ src: laravelLogo, alt: "Laravel Logo" },
-	{ src: nextjsLogo, alt: "Next.js Logo" },
-	{ src: tailwindLogo, alt: "Tailwind Logo" },
-	{ src: viteLogo, alt: "Vite Logo" },
-	{ src: scssLogo, alt: "Scss Logo" },
-	{ src: bootstapLogo, alt: "Bootstap Logo" },
+	{ src: "/img/logo/html-logo.svg", alt: "HTML Logo" },
+	{ src: "/img/logo/css-logo.svg", alt: "CSS Logo" },
+	{ src: "/img/logo/javascript-logo.svg", alt: "JavaScript Logo" },
+	{ src: "/img/logo/react-logo.svg", alt: "React Logo" },
+	{ src: "/img/logo/vue-logo.svg", alt: "Vue.js Logo" },
+	{ src: "/img/logo/php-logo.svg", alt: "PHP Logo" },
+	{ src: "/img/logo/laravel-logo.svg", alt: "Laravel Logo" },
+	{ src: "/img/logo/nextjs-logo.svg", alt: "Next.js Logo" },
+	{ src: "/img/logo/tailwind-logo.svg", alt: "Tailwind Logo" },
+	{ src: "/img/logo/vite-logo.svg", alt: "Vite Logo" },
+	{ src: "/img/logo/scss-logo.svg", alt: "SCSS Logo" },
+	{ src: "/img/logo/boostrap-logo.svg", alt: "Bootstrap Logo" },
 ];
 
 export default logos;

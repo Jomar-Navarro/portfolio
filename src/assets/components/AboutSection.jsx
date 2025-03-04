@@ -40,7 +40,7 @@ export default function AboutPage() {
 							{t("aboutSection.about")} <br />
 							{t("aboutSection.me")}
 						</h3>
-						<img src="src/assets/img/about-section.png" alt="About Me" />
+						<img src="img/about-section.png" alt="About Me" />
 					</div>
 				</div>
 			</div>
