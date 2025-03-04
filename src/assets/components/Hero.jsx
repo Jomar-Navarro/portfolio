@@ -1,6 +1,5 @@
 import Swiper from "./Swiper";
 import SplitText from "./SplitText";
-import selfImage from "../img/self.png";
 import { useTranslation } from "react-i18next";
 
 import styles from "../style/Hero.module.scss";
@@ -36,7 +35,7 @@ export default function Hero() {
 						</div>
 
 						<div className={styles.image}>
-							<img src={selfImage} alt="myself" />
+							<img src="/img/self.png" alt="myself" />
 						</div>
 					</div>
 				</div>
