@@ -43,7 +43,6 @@ export default function About() {
 
 						{/* Percorso Formativo e Lavorativo */}
 						<div className="mb-5">
-							<h2 className="h4">Percorso Formativo e Lavorativo</h2>
 							<h2 className="h4">{t("about.educationAndWork")}</h2>
 							<ul className="list-unstyled">
 								<li>
