@@ -1,10 +1,7 @@
 import axios from "axios";
 
 export default async function ProjectsApi() {
-	const token = import.meta.env.VITE_GITHUB_TOKEN;
-	const username = import.meta.env.VITE_GITHUB_USERNAME;
-
-	const url = `https://api.github.com/users/${username}/repos`;
+	const url = `/api/github`;
 
 	try {
 		let allRepos = [];
@@ -17,9 +14,6 @@ export default async function ProjectsApi() {
 				params: {
 					page: page, // Pagina corrente
 					per_page: perPage, // Numero di progetti per pagina
-				},
-				headers: {
-					Authorization: `Bearer ${token}`,
 				},
 			});
 
